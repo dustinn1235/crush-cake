@@ -1,0 +1,64 @@
+* {
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  padding: 0.5rem;
+  height: 5rem;
+  justify-content: center;
+  gap: 20%;
+  background-color: #ffffff;
+  border-radius: 10rem;
+  box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
+}
+
+button {
+  width: 15%;
+  font-size: 130%;
+  border: none;
+  border-radius: 10rem;
+  background-color: #ffffff;
+  color: #f4a1ae;
+}
+
+button:hover {
+  transition: 0.2s;
+  background-color: #f4a1ae;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+  font-size: 140%;
+  cursor: pointer;
+}
+
+section {
+  font-size: 1.2rem;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10%;
+  width: 30%;
+}
+
+section .icon {
+  font-size: 2.5rem;
+}
+
+section div > * + * {
+  margin-left: 0.5rem;
+}
