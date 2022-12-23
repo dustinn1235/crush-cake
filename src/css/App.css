@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "Gulfs-R";
+  src: url("../fonts/Gulfs Display Extra Expanded Italic.ttf")
+    format("truetype");
+}
+
 *,
 :before,
 :after {
@@ -7,7 +14,7 @@
 }
 
 html {
-  background-color: #f4a1ae;
+  background-color: #f5bec4;
 }
 
 .wrapper {
@@ -19,5 +26,6 @@ html {
 }
 
 .App {
-  width: min(85%, 85rem);
+  width: min(85%, 75rem);
+  font-family: "Montserrat", sans-serif;
 }

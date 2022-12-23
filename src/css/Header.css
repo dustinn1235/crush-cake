@@ -9,6 +9,9 @@
 
 h1 {
   font-size: 5rem;
+  font-weight: 400;
+  font-family: "Gulfs-R";
+  text-shadow: 5px 5px 3px #f4a1ae;
 }
 
 a {
@@ -19,21 +22,22 @@ nav {
   margin-top: 0.5rem;
   display: flex;
   padding: 0.5rem;
-  height: 5rem;
+  height: 3.5rem;
   justify-content: center;
   gap: 20%;
   background-color: #ffffff;
   border-radius: 10rem;
-  box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
+  box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem;
 }
 
 button {
   width: 15%;
-  font-size: 130%;
+  font-size: 120%;
   border: none;
   border-radius: 10rem;
   background-color: #ffffff;
   color: #f4a1ae;
+  font-weight: 600;
 }
 
 button:hover {
@@ -41,7 +45,7 @@ button:hover {
   background-color: #f4a1ae;
   color: #ffffff;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
-  font-size: 140%;
+  font-size: 150%;
   cursor: pointer;
 }
 
