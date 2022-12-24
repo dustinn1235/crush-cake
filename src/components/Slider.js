@@ -33,7 +33,17 @@ const Slider = () => {
   return (
     <div className="slider">
       <div className="img-container">
-        <img src={slides[curIndex].url}></img>`{" "}
+        {slides.map((item, i) => {
+          const leftIndex = curIndex === 0 ? slides.length - 1 : curIndex - 1;
+          const rightIndex = curIndex === slides.length - 1 ? 0 : curIndex + 1;
+
+          let className = "";
+          if (i === curIndex) className = "img--active";
+          else if (i === leftIndex) className = "img--left";
+          else if (i === rightIndex) className = "img--right";
+
+          return <img src={slides[curIndex].url} className={className}></img>;
+        })}
       </div>
       <div className="dotContainer">
         {slides.map((slide, i) => (
