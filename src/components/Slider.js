@@ -2,7 +2,7 @@ import "../css/Slider.css";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import Button from "@mui/material/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Slider = () => {
   const slides = [
@@ -13,8 +13,21 @@ const Slider = () => {
   const [curIndex, setCurIndex] = new useState(0);
   const [imgStyle, setImgStyle] = new useState({});
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (curIndex === slides.length - 1) {
+        setImgStyle({ transform: "translateX(0)" });
+      } else {
+        setImgStyle({
+          transform: `translateX(${-(curIndex + 1) * 100}%)`,
+        });
+      }
+      setCurIndex(curIndex === slides.length - 1 ? 0 : curIndex + 1);
+    }, 3000);
+  }, [curIndex]);
+
   const goPrev = () => {
-    setCurIndex((index) => {
+    setCurIndex((curIndex) => {
       // slide animation
       if (curIndex === 0) {
         setImgStyle({ transform: "translateX(-200%)" });
@@ -24,7 +37,7 @@ const Slider = () => {
         });
       }
       // first picture then reset
-      return index === 0 ? slides.length - 1 : index - 1;
+      return curIndex === 0 ? slides.length - 1 : curIndex - 1;
     });
   };
 
