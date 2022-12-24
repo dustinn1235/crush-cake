@@ -1,23 +1,33 @@
 .slider {
   margin: auto;
   width: 100%;
-  height: 19.4rem;
+  height: 22rem;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1.7rem;
   position: relative;
   cursor: pointer;
 }
 
-img {
+.slider .img-container {
   width: 100%;
+  height: 100%;
   position: absolute;
+  /* border: 2px solid black; */
 }
 
-.arrow {
+.slider img {
+  animation: step-start;
+  transition: all 2s;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .arrow {
   position: relative;
   font-size: 2rem;
   opacity: 0%;
+  height: 100%;
 }
 
 .slider:hover .arrow {
@@ -25,12 +35,26 @@ img {
   opacity: 100%;
 }
 
-.left {
+.slider .left {
   margin-right: auto;
-  margin-left: 2%;
 }
 
-.right {
+.slider .right {
   margin-left: auto;
-  margin-right: 2%;
+}
+
+.dotContainer {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  gap: 2%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dotContainer > * {
+  text-shadow: -1px 0 1px rgb(204, 204, 204), 0 1px 1px rgb(204, 204, 204),
+    1px 0 1px rgb(204, 204, 204), 0 -1px 1px rgb(204, 204, 204);
 }

@@ -1,6 +1,7 @@
 import "../css/Header.css";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { IoBagHandleOutline } from "react-icons/io5";
+import Button from "@mui/material/Button";
 
 const Header = () => {
   return (
@@ -21,10 +22,10 @@ const Header = () => {
           </a>
         </section>
       </div>
-      <nav>
-        <button>ABOUT US</button>
-        <button>MENU</button>
-        <button>EVENTS</button>
+      <nav className="navbar">
+        <Button>ABOUT US</Button>
+        <Button>MENU</Button>
+        <Button>EVENTS</Button>
       </nav>
     </div>
   );
