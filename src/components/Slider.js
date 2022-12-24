@@ -11,9 +11,18 @@ const Slider = () => {
     { url: "./promotin banner 2.png" },
   ];
   const [curIndex, setCurIndex] = new useState(0);
+  const [imgStyle, setImgStyle] = new useState({});
 
   const goPrev = () => {
     setCurIndex((index) => {
+      // slide animation
+      if (curIndex === 0) {
+        setImgStyle({ transform: "translateX(-200%)" });
+      } else {
+        setImgStyle({
+          transform: `translateX(${-(curIndex - 1) * 100}%)`,
+        });
+      }
       // first picture then reset
       return index === 0 ? slides.length - 1 : index - 1;
     });
@@ -21,6 +30,14 @@ const Slider = () => {
 
   const goNext = () => {
     setCurIndex((curIndex) => {
+      // slide animation
+      if (curIndex === slides.length - 1) {
+        setImgStyle({ transform: "translateX(0)" });
+      } else {
+        setImgStyle({
+          transform: `translateX(${-(curIndex + 1) * 100}%)`,
+        });
+      }
       // last picture then reset
       return curIndex === slides.length - 1 ? 0 : curIndex + 1;
     });
@@ -34,15 +51,7 @@ const Slider = () => {
     <div className="slider">
       <div className="img-container">
         {slides.map((item, i) => {
-          const leftIndex = curIndex === 0 ? slides.length - 1 : curIndex - 1;
-          const rightIndex = curIndex === slides.length - 1 ? 0 : curIndex + 1;
-
-          let className = "";
-          if (i === curIndex) className = "img--active";
-          else if (i === leftIndex) className = "img--left";
-          else if (i === rightIndex) className = "img--right";
-
-          return <img src={slides[curIndex].url} className={className}></img>;
+          return <img key={i} src={item.url} style={imgStyle}></img>;
         })}
       </div>
       <div className="dotContainer">
