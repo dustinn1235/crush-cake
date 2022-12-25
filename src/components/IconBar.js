@@ -2,20 +2,31 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import "../css/IconBar.css";
+import { Button } from "@mui/material";
 
 const IconBar = () => {
+  const style = {
+    color: "inherit",
+    padding: 0,
+    minHeight: 0,
+    minWidth: 0,
+    fontSize: "2rem",
+    borderRadius: "25%",
+    padding: "1%",
+  };
+
   return (
     <div className="icons-bar-wrapper">
       <div className="icons-bar">
-        <div>
+        <Button style={style}>
           <FaFacebook></FaFacebook>
-        </div>
-        <div>
+        </Button>
+        <Button style={style}>
           <AiFillInstagram></AiFillInstagram>
-        </div>
-        <div>
+        </Button>
+        <Button style={style}>
           <FaTiktok></FaTiktok>
-        </div>
+        </Button>
       </div>
     </div>
   );
