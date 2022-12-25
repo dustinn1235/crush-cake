@@ -14,7 +14,8 @@ const Slider = () => {
   const [imgStyle, setImgStyle] = new useState({});
 
   useEffect(() => {
-    setTimeout(() => {
+    // slide animation for every 5second
+    const timer = setTimeout(() => {
       if (curIndex === slides.length - 1) {
         setImgStyle({ transform: "translateX(0)" });
       } else {
@@ -23,36 +24,26 @@ const Slider = () => {
         });
       }
       setCurIndex(curIndex === slides.length - 1 ? 0 : curIndex + 1);
-    }, 3000);
+    }, 5000);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [curIndex]);
 
-  const goPrev = () => {
+  const move = (direction) => {
     setCurIndex((curIndex) => {
-      // slide animation
-      if (curIndex === 0) {
-        setImgStyle({ transform: "translateX(-200%)" });
-      } else {
-        setImgStyle({
-          transform: `translateX(${-(curIndex - 1) * 100}%)`,
-        });
-      }
-      // first picture then reset
-      return curIndex === 0 ? slides.length - 1 : curIndex - 1;
-    });
-  };
+      // calculate index based on direction
+      const offset = direction === "left" ? -1 : 1;
+      let index = curIndex + offset;
+      if (index >= slides.length) index = 0;
+      else if (index < 0) index = slides.length - 1;
 
-  const goNext = () => {
-    setCurIndex((curIndex) => {
-      // slide animation
-      if (curIndex === slides.length - 1) {
-        setImgStyle({ transform: "translateX(0)" });
-      } else {
-        setImgStyle({
-          transform: `translateX(${-(curIndex + 1) * 100}%)`,
-        });
-      }
-      // last picture then reset
-      return curIndex === slides.length - 1 ? 0 : curIndex + 1;
+      // set slide animation
+      setImgStyle({
+        transform: `translateX(${-index * 100}%)`,
+      });
+
+      return index;
     });
   };
 
@@ -74,10 +65,10 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <Button className="arrow left" onClick={goPrev}>
+      <Button className="arrow left" onClick={() => move("left")}>
         <BsArrowLeftCircle></BsArrowLeftCircle>
       </Button>
-      <Button className="arrow right" onClick={goNext}>
+      <Button className="arrow right" onClick={() => move("right")}>
         <BsArrowRightCircle></BsArrowRightCircle>
       </Button>
     </div>
