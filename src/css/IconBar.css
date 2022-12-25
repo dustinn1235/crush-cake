@@ -1,0 +1,28 @@
+.icons-bar-wrapper {
+  position: fixed;
+  transform: translate(-150%, 50vh);
+  transform: translateY();
+}
+
+.icons-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  color: #ffffff;
+  width: fit-content;
+  background-color: #6276a8;
+  padding: 0.7rem;
+  border-radius: 25rem;
+  margin-left: auto;
+  box-shadow: 0.12rem 0.05rem 0.2rem 0.05rem #f4a1ae;
+}
+
+.icons-bar > * {
+  font-size: 2rem;
+  /* background-color: #ffffff; */
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.5%;
+}

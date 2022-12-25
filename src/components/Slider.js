@@ -52,25 +52,30 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider">
-      <div className="img-container">
-        {slides.map((item, i) => {
-          return <img key={i} src={item.url} style={imgStyle}></img>;
-        })}
+    <div>
+      <div className="slider">
+        <div className="img-container">
+          {slides.map((item, i) => {
+            return <img key={i} src={item.url} style={imgStyle}></img>;
+          })}
+        </div>
+        <div className="dotContainer">
+          {slides.map((slide, i) => (
+            <div key={i} style={i == curIndex ? radioStyle : {}}>
+              &#9679;
+            </div>
+          ))}
+        </div>
+        <Button className="arrow left" onClick={() => move("left")}>
+          <BsArrowLeftCircle></BsArrowLeftCircle>
+        </Button>
+        <Button className="arrow right" onClick={() => move("right")}>
+          <BsArrowRightCircle></BsArrowRightCircle>
+        </Button>
       </div>
-      <div className="dotContainer">
-        {slides.map((slide, i) => (
-          <div key={i} style={i == curIndex ? radioStyle : {}}>
-            &#9679;
-          </div>
-        ))}
+      <div className="slogan--banner">
+        <img src="slogan banner.png"></img>
       </div>
-      <Button className="arrow left" onClick={() => move("left")}>
-        <BsArrowLeftCircle></BsArrowLeftCircle>
-      </Button>
-      <Button className="arrow right" onClick={() => move("right")}>
-        <BsArrowRightCircle></BsArrowRightCircle>
-      </Button>
     </div>
   );
 };
