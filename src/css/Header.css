@@ -48,9 +48,10 @@
 
 .header section {
   font-size: 1.2rem;
+  font-weight: bold;
   margin-left: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 10%;
   width: 30%;

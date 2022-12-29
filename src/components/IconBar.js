@@ -7,11 +7,10 @@ import { Button } from "@mui/material";
 const IconBar = () => {
   const style = {
     color: "inherit",
-    padding: 0,
     minHeight: 0,
     minWidth: 0,
     fontSize: "2rem",
-    borderRadius: "25%",
+    borderRadius: "50%",
     padding: "1%",
   };
 
