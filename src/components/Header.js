@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div>
       <div className="header">
-        <h1>Crush</h1>
+        <a href="" className="homepage">
+          Crush
+        </a>
         <section>
           <div>
             <a href="">VIE</a>

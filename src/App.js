@@ -4,6 +4,7 @@ import Slider from "./components/Slider";
 import IconBar from "./components/IconBar";
 import Bulletin from "./components/Bulletin";
 import Products from "./components/Products";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Slider></Slider>
         <Bulletin></Bulletin>
         <Products></Products>
+        <AboutUs></AboutUs>
       </div>
     </div>
   );
