@@ -20,13 +20,16 @@ const Bulletin = () => {
       </div>
       <div className="bulletin">
         <div className="cake-banner">
-          <h1 className="outline">Custom Cake</h1>
-          <h1 className="title">Custom Cake</h1>
           <div className="img-wrapper">
             <img alt="pop up cake" src="./PopUpCake.png"></img>
           </div>
+          <h1 className="outline">Custom Cake</h1>
+          <h1 className="title">Custom Cake</h1>
         </div>
         <div className="discount-banner">
+          <div className="img-wrapper">
+            <img src="./discount.png" style={{ transform: "scale(0.8)" }}></img>
+          </div>
           <h1 className="outline">Discount</h1>
           <h1 className="title">Discount</h1>
         </div>
