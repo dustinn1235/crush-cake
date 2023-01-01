@@ -5,6 +5,8 @@ import IconBar from "./components/IconBar";
 import Bulletin from "./components/Bulletin";
 import Products from "./components/Products";
 import AboutUs from "./components/AboutUs";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Bulletin></Bulletin>
         <Products></Products>
         <AboutUs></AboutUs>
+        <Blog></Blog>
+        <Footer></Footer>
       </div>
     </div>
   );

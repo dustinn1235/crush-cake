@@ -1,11 +1,12 @@
 import "../css/AboutUs.css";
+import { ReactComponent as CrushLogo } from "../assets/Asset 1.svg";
 
 const AboutUs = () => {
   return (
     <div className="about-wrapper">
       <h2>ABOUT US</h2>
       <div className="about-container">
-        <h1>Crush Story</h1>
+        <CrushLogo id="logo"></CrushLogo>
         <div className="content-container">
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur,
