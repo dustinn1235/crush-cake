@@ -15,6 +15,8 @@
 
 html {
   background-color: #f5bec4;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -27,5 +29,6 @@ html {
 
 .App {
   width: min(85%, 75rem);
+
   font-family: "Montserrat", sans-serif;
 }

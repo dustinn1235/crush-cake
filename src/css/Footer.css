@@ -1,0 +1,140 @@
+.footer-wrapper {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrapper .test {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-wrapper .test1 {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.footer-wrapper .star-wrapper {
+  height: 100%;
+  width: 7%;
+  background-color: white;
+}
+
+.footer-wrapper .star {
+  height: 100%;
+  width: 100%;
+  background-color: #f5bec4;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-wrapper .star.left {
+  border-radius: 0 0 3rem 0;
+}
+
+.footer-wrapper .star.right {
+  border-radius: 0 0 0 3rem;
+}
+
+.footer-wrapper .style {
+  height: auto;
+  padding-bottom: 5rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-wrapper .blog-container {
+  width: 30%;
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.footer-wrapper .blog-container h3 {
+  margin-bottom: 1.5rem;
+  margin-left: 20%;
+}
+
+.footer-wrapper .blog-container div > * {
+  margin-top: 0.5rem;
+}
+
+.footer-wrapper .icons-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -3.5rem;
+}
+
+.footer-wrapper .icons-container div {
+  margin-top: 1.5rem;
+  font-size: 4rem;
+  width: 60%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  column-gap: 1.5rem;
+}
+
+.footer-wrapper .payment-container {
+  width: 30%;
+  padding-left: 10%;
+  padding-right: 3%;
+  padding-top: 2%;
+}
+
+.footer-wrapper .payment-container div {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  width: 90%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  column-gap: 1.5rem;
+}
+
+.footer-wrapper .curve {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.footer-wrapper .curve.left {
+  transform: translateX(-100%);
+}
+
+.footer-wrapper .curve.left div {
+  height: 40%;
+  background-color: #f5bec4;
+  border-radius: 0 0 3rem 0;
+}
+
+.footer-wrapper .curve.right {
+  right: 0;
+  transform: translateX(calc((100vw - (min(85vw, 75rem))) / 2));
+  width: calc((100vw - (min(85vw, 75rem))) / 2);
+}
+
+.footer-wrapper .curve.right div {
+  height: 40%;
+  background-color: #f5bec4;
+  border-radius: 0 0 0 3rem;
+}

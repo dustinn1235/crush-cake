@@ -7,7 +7,7 @@
   color: white;
 }
 
-.about-container {
+.about-wrapper .about-container {
   display: flex;
   background-color: #6276a8;
   width: 90%;
@@ -20,7 +20,7 @@
   box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
 }
 
-.content-container {
+.about-wrapper .content-container {
   margin-left: 10%;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   font-size: 1.2rem;
 }
 
-.content-container button {
+.about-wrapper .content-container button {
   text-align: end;
   font-size: inherit;
   padding-right: 1rem;

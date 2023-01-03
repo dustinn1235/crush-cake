@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.bulletin-header {
+.bulletin-wrapper .bulletin-header {
   width: 100%;
   background-color: #f5bec4;
   display: flex;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.header-title {
+.bulletin-wrapper .header-title {
   background-color: #f4a1ae;
   font-size: 2rem;
   font-weight: bold;
@@ -29,14 +29,14 @@
   border-radius: 25px 25px 0 0;
 }
 
-.bulletin-header .star-wrapper {
+.bulletin-wrapper .bulletin-header .star-wrapper {
   background-color: #f4a1ae;
   height: 100%;
   width: 5%;
   font-size: 150%;
 }
 
-.bulletin-header .star-wrapper-before {
+.bulletin-wrapper .bulletin-header .star-wrapper-before {
   height: 100%;
   width: 100%;
   background-color: #f5bec4;
@@ -45,15 +45,15 @@
   align-items: center;
 }
 
-.bulletin-header .left {
+.bulletin-wrapper .bulletin-header .left {
   border-radius: 0 0 40% 0;
 }
 
-.bulletin-header .right {
+.bulletin-wrapper .bulletin-header .right {
   border-radius: 0 0 0 40%;
 }
 
-.bulletin {
+.bulletin-wrapper .bulletin {
   background-color: #f4a1ae;
   border-radius: 5%;
   width: 100%;
@@ -70,12 +70,12 @@
     "cake tiktok";
 }
 
-.bulletin .cake-banner {
+.bulletin-wrapper .bulletin .cake-banner {
   position: relative;
   grid-area: cake;
 }
 
-.bulletin .img-wrapper {
+.bulletin-wrapper .bulletin .img-wrapper {
   width: 100%;
   height: 100%;
   border-radius: 5%;
@@ -86,19 +86,19 @@
   background-color: #f5bec4;
 }
 
-.bulletin .img-wrapper img {
+.bulletin-wrapper .bulletin .img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: scale(1.3) translateY(5%);
 }
 
-.bulletin .cake-banner h1 {
+.bulletin-wrapper .bulletin .cake-banner h1 {
   left: 10%;
   top: -5%;
 }
 
-.bulletin .outline {
+.bulletin-wrapper .bulletin .outline {
   color: #6276a8;
   position: absolute;
   font-size: 2rem;
@@ -107,7 +107,7 @@
   font-family: "Gulfs-R";
 }
 
-.bulletin .title {
+.bulletin-wrapper .bulletin .title {
   color: #6276a8;
   position: absolute;
   font-size: 2rem;
@@ -115,7 +115,7 @@
   font-family: "Gulfs-R";
 }
 
-.bulletin .discount-banner {
+.bulletin-wrapper .bulletin .discount-banner {
   grid-area: discount;
   /* background-color: yellow; */
   /* border-radius: 5%; */
@@ -123,12 +123,12 @@
   position: relative;
 }
 
-.bulletin .discount-banner h1 {
+.bulletin-wrapper .bulletin .discount-banner h1 {
   left: 10%;
   top: -7%;
 }
 
-.bulletin .tiktok-banner {
+.bulletin-wrapper .bulletin .tiktok-banner {
   grid-area: tiktok;
   background-color: #b7e0f1;
   border-radius: 10rem;
@@ -142,13 +142,13 @@
   color: inherit;
 }
 
-.bulletin .tiktok-banner .logo {
+.bulletin-wrapper .bulletin .tiktok-banner .logo {
   background-color: #6276a8;
   font-size: 5rem;
   padding: 1rem;
   border-radius: 50%;
 }
 
-.bulletin .name-wrapper h3 {
+.bulletin-wrapper .bulletin .name-wrapper h3 {
   color: #6276a8;
 }
