@@ -28,7 +28,11 @@ const Bulletin = () => {
         </div>
         <div className="discount-banner">
           <div className="img-wrapper">
-            <img src="./discount.png" style={{ transform: "scale(0.8)" }}></img>
+            <img
+              src="./discount.png"
+              style={{ transform: "scale(0.8)" }}
+              alt="discount banner"
+            ></img>
           </div>
           <h1 className="outline">Discount</h1>
           <h1 className="title">Discount</h1>

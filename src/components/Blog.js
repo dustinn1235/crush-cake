@@ -8,7 +8,7 @@ const Blog = () => {
     <div className="blog-wrapper">
       <h1>BLOG</h1>
       <div id="blog1">
-        <img src="Blog Banner.png"></img>
+        <img src="Blog Banner.png" alt="blog banner"></img>
         <BlogTitle className="title"></BlogTitle>
       </div>
       <div id="blog2">
@@ -37,7 +37,10 @@ const Blog = () => {
             {">"} Click to read more
           </span>
           <div className="grid-img">
-            <img src="./313371284_849383356251160_4219074708848390620_n-removebg-preview.png"></img>
+            <img
+              src="./313371284_849383356251160_4219074708848390620_n-removebg-preview.png"
+              alt="person"
+            ></img>
           </div>
         </div>
       </div>

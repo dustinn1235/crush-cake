@@ -56,12 +56,19 @@ const Slider = () => {
       <div className="slider">
         <div className="img-container">
           {slides.map((item, i) => {
-            return <img key={i} src={item.url} style={imgStyle}></img>;
+            return (
+              <img
+                key={i}
+                src={item.url}
+                style={imgStyle}
+                alt="promotion banner"
+              ></img>
+            );
           })}
         </div>
         <div className="dotContainer">
           {slides.map((slide, i) => (
-            <div key={i} style={i == curIndex ? radioStyle : {}}>
+            <div key={i} style={i === curIndex ? radioStyle : {}}>
               &#9679;
             </div>
           ))}
@@ -74,7 +81,7 @@ const Slider = () => {
         </Button>
       </div>
       <div className="slogan--banner">
-        <img src="slogan banner.png"></img>
+        <img src="slogan banner.png" alt="slogan banner"></img>
       </div>
     </div>
   );
