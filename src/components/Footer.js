@@ -37,7 +37,7 @@ const Footer = () => {
           <h3>BLOG</h3>
           {blogPosts.map((e, i) => {
             return (
-              <div>
+              <div key={e.name}>
                 <p>{e.name}</p>
                 {i !== blogPosts.length - 1 && (
                   <TiStarFullOutline

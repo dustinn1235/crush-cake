@@ -20,6 +20,10 @@ html {
   scrollbar-width: thin;
 }
 
+img {
+  pointer-events: none;
+}
+
 .wrapper {
   padding-top: 1rem;
   width: 100%;
