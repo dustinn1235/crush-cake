@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/crush-cake/static/css/main.cfdd7865.css",
-    "main.js": "/crush-cake/static/js/main.d5637e3d.js",
+    "main.css": "/crush-cake/static/css/main.a90bddfb.css",
+    "main.js": "/crush-cake/static/js/main.7f3397fc.js",
     "static/media/Gulfs Display Extra Expanded Italic.ttf": "/crush-cake/static/media/Gulfs Display Extra Expanded Italic.ac542e07cbc0cf6e1bab.ttf",
     "static/media/Asset 1.svg": "/crush-cake/static/media/Asset 1.32b472cc0aa89ff47adeaddc5711e72a.svg",
+    "static/media/blog title.svg": "/crush-cake/static/media/blog title.1878db714dc96cc562b5f7447ee0aed7.svg",
     "index.html": "/crush-cake/index.html",
-    "main.cfdd7865.css.map": "/crush-cake/static/css/main.cfdd7865.css.map",
-    "main.d5637e3d.js.map": "/crush-cake/static/js/main.d5637e3d.js.map"
+    "main.a90bddfb.css.map": "/crush-cake/static/css/main.a90bddfb.css.map",
+    "main.7f3397fc.js.map": "/crush-cake/static/js/main.7f3397fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfdd7865.css",
-    "static/js/main.d5637e3d.js"
+    "static/css/main.a90bddfb.css",
+    "static/js/main.7f3397fc.js"
   ]
 }
