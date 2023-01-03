@@ -15,6 +15,11 @@
   background-color: rgb(247, 140, 140);
   border-radius: 2rem;
   box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .blog-wrapper #blog2 {
@@ -107,6 +112,7 @@
   width: 100%;
   left: 25%;
   bottom: 7%;
+  cursor: pointer;
 }
 
 .blog-wrapper .grid-img {
@@ -121,4 +127,20 @@
   position: absolute;
   width: 100%;
   object-fit: cover;
+}
+
+.blog-wrapper #blog1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  /* display: none; */
+}
+
+.blog-wrapper #blog1 .title {
+  width: 40%;
+  height: 40%;
+  border: 2px solid;
+  z-index: 1;
+  margin-left: 5%;
 }

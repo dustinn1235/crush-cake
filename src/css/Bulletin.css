@@ -84,6 +84,7 @@
   overflow: hidden;
   box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f28da1;
   background-color: #f5bec4;
+  cursor: pointer;
 }
 
 .bulletin-wrapper .bulletin .img-wrapper img {

@@ -1,12 +1,16 @@
 import React from "react";
 import "../css/Blog.css";
 import { GoTriangleRight } from "react-icons/go";
+import { ReactComponent as BlogTitle } from "../assets/blog title.svg";
 
 const Blog = () => {
   return (
     <div className="blog-wrapper">
       <h1>BLOG</h1>
-      <div id="blog1"></div>
+      <div id="blog1">
+        <img src="Blog Banner.png"></img>
+        <BlogTitle className="title"></BlogTitle>
+      </div>
       <div id="blog2">
         <div className="text-wrapper">
           <div className="text">
