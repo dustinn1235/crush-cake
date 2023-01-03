@@ -102,9 +102,9 @@
 .footer-wrapper .payment-container div {
   margin-top: 1.5rem;
   font-size: 3rem;
-  width: 90%;
-  flex-wrap: wrap;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 1rem;
   column-gap: 1.5rem;
@@ -113,8 +113,9 @@
 .footer-wrapper .curve {
   background-color: white;
   width: 100%;
-  height: 100%;
+  height: 120%;
   position: absolute;
+  bottom: 0;
 }
 
 .footer-wrapper .curve.left {
