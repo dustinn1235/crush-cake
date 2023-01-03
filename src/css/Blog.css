@@ -102,6 +102,12 @@
   font-size: 1.5rem;
   color: black;
   overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.grid-content::-webkit-scrollbar {
+  display: none;
 }
 
 .blog-wrapper .grid-more {
