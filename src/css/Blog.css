@@ -145,7 +145,6 @@
 .blog-wrapper #blog1 .title {
   width: 40%;
   height: 40%;
-  border: 2px solid;
   z-index: 1;
   margin-left: 5%;
 }
