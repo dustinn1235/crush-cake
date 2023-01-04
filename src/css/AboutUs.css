@@ -37,6 +37,7 @@
   color: #b7e0f1;
   font-family: inherit;
   cursor: pointer;
+  font-style: italic;
 }
 
 .about-wrapper #logo {

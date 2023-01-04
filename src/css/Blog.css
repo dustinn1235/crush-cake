@@ -53,9 +53,7 @@
 }
 
 .blog-wrapper .author-name {
-  text-shadow: 2px 0 black;
-  letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .blog-wrapper .brand-name {
@@ -115,6 +113,7 @@
   font-size: 1.5rem;
   color: #6276a8;
   font-weight: 500;
+  font-style: italic;
   width: 100%;
   left: 25%;
   bottom: 7%;

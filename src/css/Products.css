@@ -46,13 +46,13 @@
   text-align: center;
   color: rgb(70, 64, 64);
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .price-container {
   display: flex;
   margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .price-container .icon {
