@@ -2,14 +2,24 @@ import "../css/Header.css";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { IoBagHandleOutline } from "react-icons/io5";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ pathname }) => {
+  const linkStyle = { textDecoration: "none", color: "inherit" };
+  const activeStyle = {
+    backgroundColor: "#f4a1ae",
+    color: "#ffffff",
+    textShadow: "1px 1px 10px #fff, 1px 1px 10px #ccc",
+    fontSize: "140%",
+    cursor: "pointer",
+  };
+
   return (
     <div>
       <div className="header">
-        <a href="" className="homepage">
+        <Link to="/" className="homepage">
           Crush
-        </a>
+        </Link>
         <section>
           <div>
             <a href="">VIE</a>
@@ -25,9 +35,17 @@ const Header = () => {
         </section>
       </div>
       <nav className="navbar">
-        <Button>ABOUT US</Button>
-        <Button>MENU</Button>
-        <Button>EVENTS</Button>
+        <Button style={pathname.slice(1) === "aboutus" ? activeStyle : {}}>
+          ABOUT US
+        </Button>
+        <Button style={pathname.slice(1) === "menu" ? activeStyle : {}}>
+          <Link style={linkStyle} to="/menu">
+            MENU
+          </Link>
+        </Button>
+        <Button style={pathname.slice(1) === "events" ? activeStyle : {}}>
+          EVENTS
+        </Button>
       </nav>
     </div>
   );

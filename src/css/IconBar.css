@@ -1,6 +1,6 @@
 .icons-bar-wrapper {
   position: fixed;
-  transform: translate(-130%, 50vh);
+  transform: translate(-130%, 20vh);
   z-index: 2;
 }
 

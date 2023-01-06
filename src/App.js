@@ -1,24 +1,21 @@
 import "./css/App.css";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
-import IconBar from "./components/IconBar";
-import Bulletin from "./components/Bulletin";
-import Products from "./components/Products";
-import AboutUs from "./components/AboutUs";
-import Blog from "./components/Blog";
 import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import Menu from "./pages/Menu";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <div className="wrapper">
       <div className="App">
-        <IconBar></IconBar>
-        <Header></Header>
-        <Slider></Slider>
-        <Bulletin></Bulletin>
-        <Products></Products>
-        <AboutUs></AboutUs>
-        <Blog></Blog>
+        <Header pathname={pathname}></Header>
+        <Routes>
+          <Route path="/" element={<Homepage></Homepage>}></Route>
+          <Route path="/menu" element={<Menu></Menu>}></Route>
+        </Routes>
         <Footer></Footer>
       </div>
     </div>
