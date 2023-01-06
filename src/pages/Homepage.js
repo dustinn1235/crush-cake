@@ -1,9 +1,9 @@
-import Slider from "../components/Slider";
-import IconBar from "../components/IconBar";
-import Bulletin from "../components/Bulletin";
-import Products from "../components/Products";
-import AboutUs from "../components/AboutUs";
-import Blog from "../components/Blog";
+import Slider from "../components/home/Slider";
+import IconBar from "../components/home/IconBar";
+import Bulletin from "../components/home/Bulletin";
+import Products from "../components/home/Products";
+import AboutUs from "../components/home/AboutUs";
+import Blog from "../components/home/Blog";
 
 const Homepage = () => {
   return (

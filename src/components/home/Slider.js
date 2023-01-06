@@ -1,4 +1,4 @@
-import "../css/Slider.css";
+import "../../css/home/Slider.css";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import Button from "@mui/material/Button";

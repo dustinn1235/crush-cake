@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/Blog.css";
+import "../../css/home/Blog.css";
 import { GoTriangleRight } from "react-icons/go";
-import { ReactComponent as BlogTitle } from "../assets/blog title.svg";
+import { ReactComponent as BlogTitle } from "../../assets/blog title.svg";
 
 const Blog = () => {
   return (

@@ -1,5 +1,5 @@
-import "../css/AboutUs.css";
-import { ReactComponent as CrushLogo } from "../assets/Asset 1.svg";
+import "../../css/home/AboutUs.css";
+import { ReactComponent as CrushLogo } from "../../assets/Asset 1.svg";
 
 const AboutUs = () => {
   return (

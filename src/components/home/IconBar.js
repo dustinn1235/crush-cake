@@ -1,7 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
-import "../css/IconBar.css";
+import "../../css/home/IconBar.css";
 import { Button } from "@mui/material";
 
 const IconBar = () => {

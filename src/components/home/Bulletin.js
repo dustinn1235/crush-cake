@@ -1,4 +1,4 @@
-import "../css/Bulletin.css";
+import "../../css/home/Bulletin.css";
 import { TiStarFullOutline } from "react-icons/ti";
 import { FaTiktok } from "react-icons/fa";
 

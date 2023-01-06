@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Products.css";
+import "../../css/home/Products.css";
 import { FiShoppingBag } from "react-icons/fi";
 import { IoIosShareAlt } from "react-icons/io";
 
