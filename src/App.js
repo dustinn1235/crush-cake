@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/home/Homepage";
 import Menu from "./components/menu/Menu";
+import Cakepop from "./components/menu/Cakepop";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
@@ -28,7 +29,10 @@ function App() {
         <Header pathname={pathname}></Header>
         <Routes>
           <Route path="/" element={<Homepage></Homepage>}></Route>
-          <Route path="/menu" element={<Menu></Menu>}></Route>
+          <Route path="/menu">
+            <Route index element={<Menu></Menu>}></Route>
+            <Route path="cakepop" element={<Cakepop></Cakepop>}></Route>
+          </Route>
         </Routes>
         <Footer></Footer>
       </div>

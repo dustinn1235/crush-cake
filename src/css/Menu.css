@@ -36,6 +36,8 @@
   margin-top: 1rem;
   position: relative;
   box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
+  text-decoration: none;
+  color: inherit;
 }
 
 .cakepop-banner h3 {

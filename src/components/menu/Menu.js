@@ -3,6 +3,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 import { IoBagHandleOutline } from "react-icons/io5";
 import "../../css/Menu.css";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -12,7 +13,7 @@ const Menu = () => {
         <h1>Dessert</h1>
         <TiStarFullOutline></TiStarFullOutline>
       </div>
-      <div className="cakepop-banner">
+      <Link className="cakepop-banner" to="/menu/cakepop">
         <h3>
           CAKE<br></br>POP
         </h3>
@@ -28,7 +29,7 @@ const Menu = () => {
         </div>
         <img src="./cakepop 1.png" id="cakepop1"></img>
         <img src="./cakepop 2.png" id="cakepop2"></img>
-      </div>
+      </Link>
       <div className="banner-container">
         <div className="cookie banner">
           <img src="./cookie 3.png"></img>
