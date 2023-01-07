@@ -1,4 +1,5 @@
 import { TiStarFullOutline } from "react-icons/ti";
+import Products from "../home/Products";
 
 const Cakepop = () => {
   return (
@@ -10,9 +11,27 @@ const Cakepop = () => {
       </div>
       <div className="cakepop-grid">
         <div id="img-grid-element"></div>
-        <div id="dough-grid-element"></div>
-        <div id="coating-grid-element"></div>
-        <div id="decor-grid-element"></div>
+        <div id="dough-grid-element">
+          <p>CHOOSE YOUR DOUGH</p>
+        </div>
+        <div id="coating-grid-element">
+          <p>
+            CHOOSE
+            <br />
+            YOUR
+            <br />
+            COATING
+          </p>
+        </div>
+        <div id="decor-grid-element">
+          <p>
+            CHOOSE
+            <br />
+            YOUR
+            <br />
+            DECOR
+          </p>
+        </div>
       </div>
     </div>
   );

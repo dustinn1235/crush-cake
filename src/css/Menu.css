@@ -131,6 +131,20 @@
 .cakepop-grid > * {
   border-radius: 2rem;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--darkPrimary);
+  cursor: pointer;
+}
+
+.cakepop-grid > *:hover {
+  background-color: var(--darkPrimary);
+  color: white;
+  transition: 300ms;
 }
 
 #img-grid-element {
