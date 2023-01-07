@@ -1,8 +1,8 @@
 import "./css/App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Homepage from "./pages/Homepage";
-import Menu from "./pages/Menu";
+import Homepage from "./components/home/Homepage";
+import Menu from "./components/menu/Menu";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {

@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
 const Header = ({ pathname }) => {
-  const linkStyle = { textDecoration: "none", color: "inherit" };
+  const linkStyle = { textDecoration: "none", color: "inherit", width: "100%" };
   const activeStyle = {
     backgroundColor: "var(--shadow)",
     color: "#ffffff",

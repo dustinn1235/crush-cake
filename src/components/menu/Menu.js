@@ -1,7 +1,7 @@
 import React from "react";
 import { TiStarFullOutline } from "react-icons/ti";
 import { IoBagHandleOutline } from "react-icons/io5";
-import "../css/Menu.css";
+import "../../css/Menu.css";
 import Button from "@mui/material/Button";
 
 const Menu = () => {
