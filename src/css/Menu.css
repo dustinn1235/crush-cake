@@ -14,9 +14,9 @@
   text-shadow: 4px 4px 3px #829ad4;
   color: white;
   font-size: 1.5rem;
-  margin-top: 2rem;
   width: 100%;
   gap: 10%;
+  margin-bottom: 1.5rem;
 }
 
 .menu-wrapper .title h1 {
@@ -33,7 +33,6 @@
   padding-left: 3.5%;
   padding-right: 3.5%;
   border-radius: 2rem;
-  margin-top: 1rem;
   position: relative;
   box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
   text-decoration: none;
@@ -112,4 +111,41 @@
   font-size: 2rem;
   color: #6175a7;
   transform: translateY(20%);
+}
+
+.cakepop-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  row-gap: 3%;
+  column-gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img img dough dough"
+    "img img coating decor"
+    "img img coating decor"
+    "img img coating decor";
+}
+
+.cakepop-grid > * {
+  border-radius: 2rem;
+  background-color: white;
+}
+
+#img-grid-element {
+  grid-area: img;
+  aspect-ratio: 1/1;
+}
+
+#dough-grid-element {
+  grid-area: dough;
+}
+
+#coating-grid-element {
+  grid-area: coating;
+}
+
+#decor-grid-element {
+  grid-area: decor;
 }

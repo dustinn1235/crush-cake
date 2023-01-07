@@ -14,7 +14,8 @@ function App() {
   };
 
   const themeBlue = {
-    "--bg": "#b8e2f4",
+    "--primary": "#b8e2f4",
+    "--darkPrimary": "#6175a7",
     "--shadow": "#6175a7",
   };
 
