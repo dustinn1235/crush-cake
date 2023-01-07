@@ -2,12 +2,16 @@ import React from "react";
 import "../../css/home/Products.css";
 import { FiShoppingBag } from "react-icons/fi";
 import { IoIosShareAlt } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   return (
     <div className="product">
       <div className="product-info">
-        <img src={product.img} alt="product"></img>
+        <Link to={product.linkTo}>
+          <img src={product.img} alt="product"></img>
+        </Link>
+
         <h5>{product.name}</h5>
       </div>
       <div className="price-container">
