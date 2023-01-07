@@ -8,8 +8,22 @@ import { Route, Routes, useLocation } from "react-router-dom";
 function App() {
   const { pathname } = useLocation();
 
+  const themePink = {
+    backgroundColor: "#f5bec4",
+  };
+
+  const themeBlue = {
+    "--bg": "#b8e2f4",
+    "--shadow": "#6175a7",
+  };
+
+  const findTheme = () => {
+    if (pathname.includes("menu")) return themeBlue;
+  };
+  const theme = findTheme();
+
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={theme}>
       <div className="App">
         <Header pathname={pathname}></Header>
         <Routes>

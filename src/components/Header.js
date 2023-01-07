@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Header = ({ pathname }) => {
   const linkStyle = { textDecoration: "none", color: "inherit" };
   const activeStyle = {
-    backgroundColor: "#f4a1ae",
+    backgroundColor: "var(--shadow)",
     color: "#ffffff",
     textShadow: "1px 1px 10px #fff, 1px 1px 10px #ccc",
     fontSize: "140%",

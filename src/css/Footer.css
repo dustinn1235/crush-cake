@@ -34,7 +34,7 @@
 .footer-wrapper .star {
   height: 100%;
   width: 100%;
-  background-color: #f5bec4;
+  background-color: var(--bg);
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@
 
 .footer-wrapper .curve.left div {
   height: 40%;
-  background-color: #f5bec4;
+  background-color: var(--bg);
   border-radius: 0 0 3rem 0;
 }
 
@@ -140,6 +140,6 @@
 
 .footer-wrapper .curve.right div {
   height: 40%;
-  background-color: #f5bec4;
+  background-color: var(--bg);
   border-radius: 0 0 0 3rem;
 }
