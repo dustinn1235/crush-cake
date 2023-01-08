@@ -35,8 +35,10 @@ const Header = ({ pathname }) => {
         </section>
       </div>
       <nav className="navbar">
-        <Button style={pathname.slice(1) === "aboutus" ? activeStyle : {}}>
-          ABOUT US
+        <Button style={pathname.slice(1) === "about" ? activeStyle : {}}>
+          <Link style={linkStyle} to="/about">
+            ABOUT US
+          </Link>
         </Button>
         <Button style={pathname.slice(1) === "menu" ? activeStyle : {}}>
           <Link style={linkStyle} to="/menu">

@@ -1,0 +1,18 @@
+.aboutus-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-content {
+  background-color: white;
+  width: 80%;
+  padding: 5%;
+  border-radius: 2rem;
+  text-indent: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+  box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
+}

@@ -5,6 +5,7 @@ import Homepage from "./components/home/Homepage";
 import Menu from "./components/menu/Menu";
 import Cakepop from "./components/menu/Cakepop";
 import { Route, Routes, useLocation } from "react-router-dom";
+import About from "./components/About";
 
 function App() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ function App() {
             <Route index element={<Menu></Menu>}></Route>
             <Route path="cakepop" element={<Cakepop></Cakepop>}></Route>
           </Route>
+          <Route path="/about" element={<About></About>}></Route>
         </Routes>
         <Footer></Footer>
       </div>

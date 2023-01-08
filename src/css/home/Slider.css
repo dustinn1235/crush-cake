@@ -67,7 +67,6 @@
   display: flex;
   box-shadow: 0.12rem 0.05rem 0.1rem 0.05rem #f4a1ae;
   border-radius: 1rem;
-  cursor: pointer;
 }
 
 .slogan--banner img {

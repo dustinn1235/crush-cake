@@ -24,7 +24,7 @@
   font-size: 2.5rem;
 }
 
-.cakepop-banner {
+.menu-wrapper .cakepop-banner {
   display: flex;
   width: 80%;
   height: 20rem;
@@ -39,7 +39,7 @@
   color: inherit;
 }
 
-.cakepop-banner h3 {
+.menu-wrapper .cakepop-banner h3 {
   font-size: 3rem;
   width: 25%;
   padding-left: 1rem;
@@ -47,13 +47,13 @@
   color: #6175a7;
 }
 
-.cakepop-banner .content {
+.menu-wrapper .cakepop-banner .content {
   text-indent: 1rem;
   font-size: 1.2rem;
   width: 75%;
 }
 
-#cakepop1 {
+.menu-wrapper #cakepop1 {
   height: 100%;
   transform: scale(0.55) rotate(25deg);
   position: absolute;
@@ -62,7 +62,7 @@
   border: 2px;
 }
 
-#cakepop2 {
+.menu-wrapper #cakepop2 {
   position: absolute;
   height: 100%;
   transform: scale(0.6) rotate(-20deg);
@@ -70,7 +70,7 @@
   bottom: -25%;
 }
 
-.banner-container {
+.menu-wrapper .banner-container {
   margin-top: 4rem;
   width: 80%;
   display: flex;
@@ -78,7 +78,7 @@
   gap: 3%;
 }
 
-.banner {
+.menu-wrapper .banner {
   width: 50%;
   background-color: white;
   display: flex;
@@ -90,30 +90,30 @@
   box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
 }
 
-.banner img {
+.menu-wrapper .banner img {
   width: 40%;
   height: auto;
   transform: translateY(-15%) scale(1.3);
 }
 
-.banner h1 {
+.menu-wrapper .banner h1 {
   font-weight: 800;
   color: #6175a7;
 }
 
-.banner p {
+.menu-wrapper .banner p {
   text-indent: 1rem;
   margin-bottom: 2%;
 }
 
-.banner .icon {
+.menu-wrapper .banner .icon {
   margin-top: auto;
   font-size: 2rem;
   color: #6175a7;
   transform: translateY(20%);
 }
 
-.cakepop-grid {
+.menu-wrapper .cakepop-grid {
   width: 100%;
   height: auto;
   display: grid;
@@ -128,7 +128,7 @@
     "img img coating decor";
 }
 
-.cakepop-grid > * {
+.menu-wrapper .cakepop-grid > * {
   border-radius: 2rem;
   background-color: white;
   display: flex;
@@ -141,25 +141,25 @@
   cursor: pointer;
 }
 
-.cakepop-grid > *:hover {
+.menu-wrapper .cakepop-grid > *:hover {
   background-color: var(--darkPrimary);
   color: white;
   transition: 300ms;
 }
 
-#img-grid-element {
+.menu-wrapper #img-grid-element {
   grid-area: img;
   aspect-ratio: 1/1;
 }
 
-#dough-grid-element {
+.menu-wrapper #dough-grid-element {
   grid-area: dough;
 }
 
-#coating-grid-element {
+.menu-wrapper #coating-grid-element {
   grid-area: coating;
 }
 
-#decor-grid-element {
+.menu-wrapper #decor-grid-element {
   grid-area: decor;
 }
