@@ -48,6 +48,9 @@ const Header = ({ pathname }) => {
         <Button style={pathname.slice(1) === "events" ? activeStyle : {}}>
           EVENTS
         </Button>
+        <Button style={pathname.slice(1) === "blog" ? activeStyle : {}}>
+          BLOG
+        </Button>
       </nav>
     </div>
   );
