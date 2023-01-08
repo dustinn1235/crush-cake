@@ -2,6 +2,29 @@ import { TiStarFullOutline } from "react-icons/ti";
 import Products from "../home/Products";
 
 const Cakepop = () => {
+  const products = [
+    {
+      name: "Blue Boo",
+      price: "$5.99",
+      img: "/cakepop 1 (1).png",
+    },
+    {
+      name: "Choco Lover",
+      price: "$5.99",
+      img: "/cakepop 2 (1).png",
+    },
+    {
+      name: "Pinky Bae",
+      price: "$5.99",
+      img: "/cakepop 3.png",
+    },
+    {
+      name: "Red XMas",
+      price: "$5.99",
+      img: "/cakepop 4.png",
+    },
+  ];
+
   return (
     <div className="menu-wrapper">
       <div className="title">
@@ -33,6 +56,7 @@ const Cakepop = () => {
           </p>
         </div>
       </div>
+      <Products title="AVAILABLE" products={products}></Products>
     </div>
   );
 };

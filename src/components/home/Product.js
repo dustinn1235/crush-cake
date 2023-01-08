@@ -11,7 +11,6 @@ const Product = ({ product }) => {
         <Link to={product.linkTo}>
           <img src={product.img} alt="product"></img>
         </Link>
-
         <h5>{product.name}</h5>
       </div>
       <div className="price-container">

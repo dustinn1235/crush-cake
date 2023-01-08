@@ -1,5 +1,5 @@
 .products {
-  background-color: #f5bec4;
+  background-color: var(--primary);
   color: white;
   width: 100%;
   height: auto;
@@ -29,8 +29,12 @@
   background-color: white;
   position: relative;
   border-radius: 15%;
-  box-shadow: 0.12rem 0.05rem 0.1rem 0.05rem #f4a1ae;
+  box-shadow: 0.12rem 0.05rem 0.35rem 0.05rem var(--darkPrimary);
   cursor: pointer;
+}
+
+.product a {
+  width: 100%;
 }
 
 .product img {
