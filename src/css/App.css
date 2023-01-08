@@ -45,6 +45,7 @@ img {
   --primary: #f5bec4;
   --darkPrimary: #f4a1ae;
   --shadow: #f4a1ae;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 1400px) {
