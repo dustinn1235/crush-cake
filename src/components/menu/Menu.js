@@ -13,7 +13,7 @@ const Menu = () => {
         <h1>Dessert</h1>
         <TiStarFullOutline></TiStarFullOutline>
       </div>
-      <Link className="cakepop-banner" to="/menu/cakepop">
+      <Link className="big-banner" to="/menu/cakepop">
         <h3>
           CAKE<br></br>POP
         </h3>
@@ -30,6 +30,22 @@ const Menu = () => {
         <img src="./cakepop 1.png" id="cakepop1"></img>
         <img src="./cakepop 2.png" id="cakepop2"></img>
       </Link>
+      <div className="big-banner" style={{ paddingTop: "10%" }}>
+        <h3 style={{ fontSize: "2.3rem" }}>
+          CUSTOM<br></br>CAKE
+        </h3>
+        <div className="content">
+          <h4>Small bite, big taste</h4>
+          <p>
+            Are you in need of a cake that is out of this world? Look no further
+            than Custom Cake. Our cakes will amaze and delight your guests with
+            their wow factor. With a variety of flavors and designs, you are
+            sure to find the perfect cake for your special occasion.
+          </p>
+        </div>
+        <img src="/Heart-Anni Cake.png" id="customcake1"></img>
+        <img src="/Chocolate Cake.png" id="customcake2"></img>
+      </div>
       <div className="banner-container">
         <div className="cookie banner">
           <img src="./cookie 3.png"></img>

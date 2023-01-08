@@ -24,7 +24,7 @@
   font-size: 2.5rem;
 }
 
-.menu-wrapper .cakepop-banner {
+.menu-wrapper .big-banner {
   display: flex;
   width: 80%;
   height: 20rem;
@@ -37,9 +37,10 @@
   box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
   text-decoration: none;
   color: inherit;
+  margin-bottom: 4rem;
 }
 
-.menu-wrapper .cakepop-banner h3 {
+.menu-wrapper .big-banner h3 {
   font-size: 3rem;
   width: 25%;
   padding-left: 1rem;
@@ -47,7 +48,23 @@
   color: #6175a7;
 }
 
-.menu-wrapper .cakepop-banner .content {
+.menu-wrapper #customcake1 {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  right: -0%;
+  top: -30%;
+}
+
+.menu-wrapper #customcake2 {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  right: 28%;
+  top: -15%;
+}
+
+.menu-wrapper .big-banner .content {
   text-indent: 1rem;
   font-size: 1.2rem;
   width: 75%;
@@ -71,7 +88,6 @@
 }
 
 .menu-wrapper .banner-container {
-  margin-top: 4rem;
   width: 80%;
   display: flex;
   /* border: 2px solid; */
