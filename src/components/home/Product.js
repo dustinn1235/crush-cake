@@ -3,6 +3,7 @@ import "../../css/home/Products.css";
 import { FiShoppingBag } from "react-icons/fi";
 import { IoIosShareAlt } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const Product = ({ product }) => {
   return (
@@ -15,12 +16,9 @@ const Product = ({ product }) => {
       </div>
       <div className="price-container">
         <p>{product.price}</p>
-        <button style={{ marginLeft: "auto" }} className="icon">
+        <Button style={{ marginLeft: "auto" }} className="icon">
           <FiShoppingBag></FiShoppingBag>
-        </button>
-        <button style={{ marginLeft: "3%" }} className="icon">
-          <IoIosShareAlt></IoIosShareAlt>
-        </button>
+        </Button>
       </div>
     </div>
   );
