@@ -1,0 +1,25 @@
+.title-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gulfs-R";
+  text-shadow: 4px 4px 3px #829ad4;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  gap: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.title-header h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}

@@ -1,18 +1,14 @@
 import React from "react";
-import { TiStarFullOutline } from "react-icons/ti";
 import { IoBagHandleOutline } from "react-icons/io5";
-import "../../css/Menu.css";
+import "../../css/menu/Menu.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import Title from "../Title";
 
 const Menu = () => {
   return (
     <div className="menu-wrapper">
-      <div className="title">
-        <TiStarFullOutline></TiStarFullOutline>
-        <h1>Dessert</h1>
-        <TiStarFullOutline></TiStarFullOutline>
-      </div>
+      <Title title="Dessert"></Title>
       <Link className="big-banner" to="/menu/cakepop">
         <h3>
           CAKE<br></br>POP
@@ -30,7 +26,11 @@ const Menu = () => {
         <img src="./cakepop 1.png" id="cakepop1"></img>
         <img src="./cakepop 2.png" id="cakepop2"></img>
       </Link>
-      <div className="big-banner" style={{ paddingTop: "10%" }}>
+      <Link
+        className="big-banner"
+        style={{ paddingTop: "10%" }}
+        to="/menu/customcake"
+      >
         <h3 style={{ fontSize: "2.3rem" }}>
           CUSTOM<br></br>CAKE
         </h3>
@@ -45,7 +45,7 @@ const Menu = () => {
         </div>
         <img src="/Heart-Anni Cake.png" id="customcake1"></img>
         <img src="/Chocolate Cake.png" id="customcake2"></img>
-      </div>
+      </Link>
       <div className="banner-container">
         <div className="cookie banner">
           <img src="./cookie 3.png"></img>

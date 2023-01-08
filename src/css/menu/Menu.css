@@ -6,24 +6,6 @@
   width: 100%;
 }
 
-.menu-wrapper .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Gulfs-R";
-  text-shadow: 4px 4px 3px #829ad4;
-  color: white;
-  font-size: 1.5rem;
-  width: 100%;
-  gap: 10%;
-  margin-bottom: 1.5rem;
-}
-
-.menu-wrapper .title h1 {
-  font-weight: 400;
-  font-size: 2.5rem;
-}
-
 .menu-wrapper .big-banner {
   display: flex;
   width: 80%;

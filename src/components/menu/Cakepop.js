@@ -1,5 +1,6 @@
 import { TiStarFullOutline } from "react-icons/ti";
 import Products from "../home/Products";
+import Title from "../Title";
 
 const Cakepop = () => {
   const products = [
@@ -27,11 +28,7 @@ const Cakepop = () => {
 
   return (
     <div className="menu-wrapper">
-      <div className="title">
-        <TiStarFullOutline></TiStarFullOutline>
-        <h1>Dessert</h1>
-        <TiStarFullOutline></TiStarFullOutline>
-      </div>
+      <Title title="Dessert"></Title>
       <div className="cakepop-grid">
         <div id="img-grid-element"></div>
         <div id="dough-grid-element">
