@@ -1,7 +1,6 @@
 import React from "react";
 import "../../css/home/Products.css";
 import { FiShoppingBag } from "react-icons/fi";
-import { IoIosShareAlt } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 

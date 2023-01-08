@@ -7,13 +7,14 @@ import Cakepop from "./components/menu/Cakepop";
 import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
+import Checkout from "./components/Checkout";
 
 function App() {
   const { pathname } = useLocation();
 
-  const themePink = {
-    backgroundColor: "#f5bec4",
-  };
+  // const themePink = {
+  //   backgroundColor: "#f5bec4",
+  // };
 
   const themeBlue = {
     "--primary": "#b8e2f4",
@@ -41,6 +42,7 @@ function App() {
             ></Route>
           </Route>
           <Route path="/about" element={<About></About>}></Route>
+          <Route path="/checkout" element={<Checkout></Checkout>}></Route>
         </Routes>
         <Footer></Footer>
       </div>

@@ -1,4 +1,3 @@
-import { TiStarFullOutline } from "react-icons/ti";
 import Products from "../home/Products";
 import Title from "../Title";
 

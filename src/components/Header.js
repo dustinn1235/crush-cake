@@ -29,9 +29,9 @@ const Header = ({ pathname }) => {
           <a className="icon" href="">
             <HiOutlineUserCircle></HiOutlineUserCircle>
           </a>
-          <a className="icon" href="">
+          <Link className="icon" to="/checkout">
             <IoBagHandleOutline></IoBagHandleOutline>
-          </a>
+          </Link>
         </section>
       </div>
       <nav className="navbar">
