@@ -9,7 +9,7 @@ import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
 import Checkout from "./components/checkout/Checkout";
 import { UserContext, products } from "./contexts/UserContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const { pathname } = useLocation();
@@ -22,7 +22,11 @@ function App() {
   const findTheme = () => {
     if (pathname.includes("menu")) return themeBlue;
   };
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(new Map());
+
+  useEffect(() => {
+    console.log(cart);
+  }, [cart]);
 
   return (
     <div className="wrapper" style={findTheme()}>

@@ -5,7 +5,7 @@ import { UserContext } from "../../contexts/UserContext";
 
 const Cakepop = () => {
   let { products } = useContext(UserContext);
-  products = products.slice(2);
+  const displayProducts = products.slice(2);
 
   return (
     <div className="menu-wrapper">
@@ -34,7 +34,7 @@ const Cakepop = () => {
           </p>
         </div>
       </div>
-      <Products title="AVAILABLE" products={products}></Products>
+      <Products title="AVAILABLE" products={displayProducts}></Products>
     </div>
   );
 };
