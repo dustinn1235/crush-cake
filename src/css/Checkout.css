@@ -1,0 +1,209 @@
+.checkout-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.billing-container {
+  background-color: white;
+  width: 55%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 4.5%;
+  padding-right: 5%;
+}
+
+.billing-container h1 {
+  border-bottom: 0.13rem solid;
+  font-size: 1.5rem;
+}
+
+.billing-container a {
+  margin-left: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.billing-container .steps-container {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.billing-container .header {
+  display: flex;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.billing-container .icon {
+  position: absolute;
+  left: -4%;
+  color: var(--darkPrimary);
+  font-size: 1rem;
+}
+
+.billing-container .form-container {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.textform {
+  height: 3.7rem;
+}
+.textform div {
+  border-radius: 3rem;
+}
+.textform label {
+  padding-left: 0.5rem;
+}
+.textform input {
+  width: 90%;
+}
+
+.billing-container .radio {
+  display: flex;
+  border: 1px solid #c4c4c4;
+  align-items: center;
+  border-radius: 3rem;
+  height: 3.7rem;
+  width: 100%;
+  margin: 0;
+  padding-left: 2%;
+}
+
+.billing-container button {
+  font-size: 1.3rem;
+  font-family: inherit;
+  color: black;
+  font-weight: 600;
+}
+
+/* ############################################################################### */
+.cart-container {
+  width: 43%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #6276a8;
+  color: white;
+}
+
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cart-item {
+  position: relative;
+  display: grid;
+  column-gap: 5%;
+  row-gap: 10%;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "image detail detail"
+    "image button price";
+}
+
+.cart-item .image-container {
+  grid-area: image;
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.product-detail-container {
+  grid-area: detail;
+}
+
+.product-detail-container p {
+  margin-top: 0.2rem;
+  font-weight: 200;
+}
+
+.button-container {
+  grid-area: button;
+  background-color: white;
+  display: flex;
+  width: 55%;
+  border-radius: 10rem;
+  gap: 5%;
+}
+
+.button-container button {
+  line-height: 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  border: none;
+  text-align: center;
+  border: none;
+}
+
+.cart-item .price {
+  grid-area: price;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+#removeBtn {
+  color: white;
+  position: absolute;
+  right: 0;
+  line-height: 0;
+  height: 20%;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 0.5px;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0,
+    rgba(0, 0, 0, 0.12) 0 0 0 0;
+  color: rgba(0, 0, 0, 0.37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #b7e0f1;
+}
+
+.button-61:active {
+  background: #cae4f0;
+}

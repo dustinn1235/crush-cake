@@ -7,7 +7,7 @@ import Cakepop from "./components/menu/Cakepop";
 import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
-import Checkout from "./components/Checkout";
+import Checkout from "./components/checkout/Checkout";
 
 function App() {
   const { pathname } = useLocation();
