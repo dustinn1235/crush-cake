@@ -1,9 +1,11 @@
 import "../css/About.css";
+import { ReactComponent as CrushStoryLogo } from "../assets/About us.svg";
 
 const About = () => {
   return (
     <div className="aboutus-wrapper">
       <div className="aboutus-content">
+        <CrushStoryLogo id="logo"></CrushStoryLogo>
         <p>
           Crush is a brand that was born with the desire to serve the needs of
           customers to design a meaningful gift for their loved ones or
