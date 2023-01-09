@@ -8,14 +8,11 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
 import Checkout from "./components/checkout/Checkout";
+import { UserContext, products } from "./contexts/UserContext";
+import { useState } from "react";
 
 function App() {
   const { pathname } = useLocation();
-
-  // const themePink = {
-  //   backgroundColor: "#f5bec4",
-  // };
-
   const themeBlue = {
     "--primary": "#b8e2f4",
     "--darkPrimary": "#6175a7",
@@ -25,27 +22,29 @@ function App() {
   const findTheme = () => {
     if (pathname.includes("menu")) return themeBlue;
   };
-  const theme = findTheme();
+  const [cart, setCart] = useState([]);
 
   return (
-    <div className="wrapper" style={theme}>
-      <div className="App">
-        <Header pathname={pathname}></Header>
-        <Routes>
-          <Route path="/" element={<Homepage></Homepage>}></Route>
-          <Route path="/menu">
-            <Route index element={<Menu></Menu>}></Route>
-            <Route path="cakepop" element={<Cakepop></Cakepop>}></Route>
-            <Route
-              path="customcake"
-              element={<CustomCake></CustomCake>}
-            ></Route>
-          </Route>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/checkout" element={<Checkout></Checkout>}></Route>
-        </Routes>
-        <Footer></Footer>
-      </div>
+    <div className="wrapper" style={findTheme()}>
+      <UserContext.Provider value={{ cart, setCart, products }}>
+        <div className="App">
+          <Header pathname={pathname}></Header>
+          <Routes>
+            <Route path="/" element={<Homepage></Homepage>}></Route>
+            <Route path="/menu">
+              <Route index element={<Menu></Menu>}></Route>
+              <Route path="cakepop" element={<Cakepop></Cakepop>}></Route>
+              <Route
+                path="customcake"
+                element={<CustomCake></CustomCake>}
+              ></Route>
+            </Route>
+            <Route path="/about" element={<About></About>}></Route>
+            <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+          </Routes>
+          <Footer></Footer>
+        </div>
+      </UserContext.Provider>
     </div>
   );
 }

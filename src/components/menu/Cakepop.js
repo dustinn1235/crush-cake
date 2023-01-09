@@ -1,29 +1,11 @@
 import Products from "../home/Products";
 import Title from "../Title";
+import { useContext } from "react";
+import { UserContext } from "../../contexts/UserContext";
 
 const Cakepop = () => {
-  const products = [
-    {
-      name: "Blue Boo",
-      price: "$5.99",
-      img: "/cakepop 1 (1).png",
-    },
-    {
-      name: "Choco Lover",
-      price: "$5.99",
-      img: "/cakepop 2 (1).png",
-    },
-    {
-      name: "Pinky Bae",
-      price: "$5.99",
-      img: "/cakepop 3.png",
-    },
-    {
-      name: "Red XMas",
-      price: "$5.99",
-      img: "/cakepop 4.png",
-    },
-  ];
+  let { products } = useContext(UserContext);
+  products = products.slice(2);
 
   return (
     <div className="menu-wrapper">
