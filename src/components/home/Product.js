@@ -27,7 +27,7 @@ const Product = ({ product }) => {
         <h5>{product.name}</h5>
       </div>
       <div className="price-container">
-        <p>{product.price}</p>
+        <p>${product.price}</p>
         <Button
           style={{ marginLeft: "auto" }}
           className="icon"

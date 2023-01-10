@@ -5,6 +5,11 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "Gulfs-I";
+  src: url("../fonts/Gulfs\ Display\ Expanded.ttf") format("truetype");
+}
+
 *,
 :before,
 :after {

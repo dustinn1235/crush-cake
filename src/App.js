@@ -12,6 +12,34 @@ import { UserContext, products } from "./contexts/UserContext";
 import { useEffect, useState } from "react";
 
 function App() {
+  /* 
+  TODO 
+  homepage:
+  add link to bulletin : custom cake / discount
+  add link to about us homepage
+  add link to blog post footer
+  add copy right footer
+  create blog page / post
+  create event page / promotion
+
+  menu:
+  implement cookie/brownie button in dessert menu
+  add background decoration
+  fix custom cake banner
+  
+  cakepop:
+  add image to cake pop page
+
+  custom cake:
+  finish page
+
+  cart:
+  add empty cart page
+  add payment method page
+  add order confirmation page
+  finish cart
+   */
+
   const { pathname } = useLocation();
   const themeBlue = {
     "--primary": "#b8e2f4",
