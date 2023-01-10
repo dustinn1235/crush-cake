@@ -22,7 +22,10 @@ const Cart = () => {
           <CartItem key={e.name} item={e}></CartItem>
         ))}
       </div>
-      <div style={{ display: "grid", borderBottom: "0.15rem solid" }}>
+      <div
+        id="price-container"
+        style={{ display: "grid", borderBottom: "0.15rem solid" }}
+      >
         <div className="cost-container">
           <p>SUBTOTAL</p>
           <span>${subTotal.toFixed(2)}</span>
