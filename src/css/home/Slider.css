@@ -55,6 +55,8 @@
   gap: 2%;
   justify-content: center;
   align-items: flex-end;
+  text-decoration: none;
+  color: inherit;
 }
 
 .dotContainer > * {

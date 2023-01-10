@@ -46,10 +46,14 @@ const Header = ({ pathname }) => {
           </Link>
         </Button>
         <Button style={pathname.slice(1) === "events" ? activeStyle : {}}>
-          EVENTS
+          <Link style={linkStyle} to="/events">
+            EVENTS
+          </Link>
         </Button>
         <Button style={pathname.slice(1) === "blog" ? activeStyle : {}}>
-          BLOG
+          <Link style={linkStyle} to="/blog">
+            BLOG
+          </Link>
         </Button>
       </nav>
     </div>

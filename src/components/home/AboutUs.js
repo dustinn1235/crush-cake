@@ -1,5 +1,6 @@
 import "../../css/home/AboutUs.css";
 import { ReactComponent as CrushLogo } from "../../assets/Asset 1.svg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -17,11 +18,13 @@ const AboutUs = () => {
             of the product. Each cake is aimed at the health of consumers,
             without using preservatives or additives harmful to health.
           </p>
-          <button>
-            {">"}
-            {">"}
-            {">"} Click to read more
-          </button>
+          <Link style={{ marginLeft: "auto" }} to="about">
+            <button>
+              {">"}
+              {">"}
+              {">"} Click to read more
+            </button>
+          </Link>
         </div>
       </div>
     </div>

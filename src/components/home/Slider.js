@@ -3,6 +3,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const slides = [
@@ -66,13 +67,13 @@ const Slider = () => {
             );
           })}
         </div>
-        <div className="dotContainer">
+        <Link className="dotContainer" to="events">
           {slides.map((slide, i) => (
             <div key={i} style={i === curIndex ? radioStyle : {}}>
               &#9679;
             </div>
           ))}
-        </div>
+        </Link>
         <Button className="arrow left" onClick={() => move("left")}>
           <BsArrowLeftCircle></BsArrowLeftCircle>
         </Button>
