@@ -23,7 +23,6 @@ function App() {
   create event page / promotion
 
   menu:
-  implement cookie/brownie button in dessert menu
   add background decoration
   fix custom cake banner
   

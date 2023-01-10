@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IoBagHandleOutline } from "react-icons/io5";
 import "../../css/menu/Menu.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import Title from "../Title";
+import { UserContext } from "../../contexts/UserContext";
 
 const Menu = () => {
+  const { cart, setCart, products } = useContext(UserContext);
+
+  const addProduct = (name) => {
+    let product = {};
+    for (let item of products) {
+      if (item.name === name) {
+        product = item;
+        break;
+      }
+    }
+
+    if (cart.has(product)) {
+      cart.set(product, cart.get(product) + 1);
+      setCart(new Map(cart));
+    } else {
+      cart.set(product, 1);
+      setCart(new Map(cart));
+    }
+  };
+
   return (
     <div className="menu-wrapper">
       <Title title="Dessert"></Title>
@@ -61,7 +82,7 @@ const Menu = () => {
             natural travel companion, a modernized equivalent of the travel
             cakes used throughout history.
           </p>
-          <Button className="icon">
+          <Button className="icon" onClick={() => addProduct("Happy Cookies")}>
             <IoBagHandleOutline></IoBagHandleOutline>
           </Button>
         </div>
@@ -81,7 +102,7 @@ const Menu = () => {
             <strong>Brownie Cakey</strong> - More flour version, less butter and
             chocolate, so it has more porosity.
           </p>
-          <Button className="icon">
+          <Button className="icon" onClick={() => addProduct("Brownie")}>
             <IoBagHandleOutline></IoBagHandleOutline>
           </Button>
         </div>
