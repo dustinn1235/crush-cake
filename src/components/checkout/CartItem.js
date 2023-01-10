@@ -24,7 +24,7 @@ const CartItem = ({ item }) => {
         <img alt="product-img" src={item.img}></img>
       </div>
       <div className="product-detail-container">
-        <h2>{item.name}</h2>
+        <h3>{item.name}</h3>
         <p>
           - Caramel filling brownie<br></br>- sad<br></br>- sad
         </p>

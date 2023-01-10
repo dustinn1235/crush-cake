@@ -1,0 +1,10 @@
+.emptycart-container h1 {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: -3rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0.15rem 0.12rem 0.3rem 0.12rem var(--shadow);
+  color: var(--darkPrimary);
+}

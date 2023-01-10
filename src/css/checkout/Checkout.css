@@ -91,8 +91,9 @@
 .cart-container {
   width: 43%;
   border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 6.3fr 1fr 0.5fr;
+  row-gap: 3%;
   padding: 2%;
   background-color: #6276a8;
   color: white;
@@ -102,7 +103,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 1rem;
+  row-gap: 7%;
+  overflow: auto;
 }
 
 .cart-item {
@@ -110,7 +112,7 @@
   display: grid;
   column-gap: 5%;
   row-gap: 10%;
-  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-columns: 1.3fr 2fr 1fr;
   grid-template-rows: 3fr 1fr;
   grid-template-areas:
     "image detail detail"
@@ -123,6 +125,7 @@
   border-radius: 1rem;
   width: 100%;
   aspect-ratio: 1/1;
+  box-shadow: 0rem 0rem 0.3rem 0.12rem #b7e0f1;
 }
 
 .cart-item .image-container img {
@@ -144,15 +147,16 @@
 .cart-item .button-container {
   grid-area: button;
   background-color: white;
-  display: flex;
-  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 50%;
   border-radius: 10rem;
   gap: 5%;
 }
 
 .cart-item .button-container button {
   line-height: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   height: 100%;
   aspect-ratio: 1/1;
   border-radius: 1rem;
@@ -168,7 +172,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
   border: none;
   text-align: center;
   border: none;
@@ -180,7 +183,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2rem;
   line-height: 0;
 }
@@ -193,6 +196,20 @@
   height: 20%;
   font-size: 1.2rem;
   padding: 0;
+}
+
+.cart-container .cost-container {
+  display: flex;
+  font-weight: 500;
+}
+
+.cost-container span {
+  margin-left: auto;
+}
+
+#total {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .button-61:hover {

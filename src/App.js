@@ -34,10 +34,8 @@ function App() {
   finish page
 
   cart:
-  add empty cart page
   add payment method page
   add order confirmation page
-  finish cart
    */
 
   const { pathname } = useLocation();
