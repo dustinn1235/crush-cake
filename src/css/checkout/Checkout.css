@@ -249,6 +249,7 @@
 
   .cart-container {
     padding: 5%;
+    padding-bottom: 3%;
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
@@ -261,6 +262,7 @@
   .cart-items-container {
     padding-left: 15%;
     padding-right: 15%;
+    height: 75%;
   }
 
   .billing-container .icon {
