@@ -1,18 +1,9 @@
-import { TiStarFullOutline } from "react-icons/ti";
-import {
-  Button,
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  Radio,
-  RadioGroup,
-  TextField,
-} from "@mui/material";
+import React from "react";
 
-const ShipDetail = () => {
+const Payment = () => {
   return (
     <div className="billing-container">
-      <h1>BILLING INFORMATION</h1>
+      {/* <h1>BILLING INFORMATION</h1>
       <div className="steps-container">
         <span>SHIPMENT DETAILS</span>
         <span> {" > "} </span>
@@ -29,10 +20,10 @@ const ShipDetail = () => {
           Become a member now to get more offers <a>Sign up</a>
         </p>
         <div className="form-container">
-          <TextField label="Name" className="textform" size="small" />
-          <TextField label="Email" className="textform" size="small" />
-          <TextField label="Phone No" className="textform" size="small" />
-          <TextField label="Address" className="textform" size="small" />
+          <TextField label="Name" className="textform" />
+          <TextField label="Email" className="textform" />
+          <TextField label="Phone No" className="textform" />
+          <TextField label="Address" className="textform" />
         </div>
         <div>
           <Checkbox></Checkbox>
@@ -69,9 +60,9 @@ const ShipDetail = () => {
           </RadioGroup>
         </FormControl>
       </div>
-      <Button>CONTINUE PAYING &gt;&gt;</Button>
+      <Button>CONTINUE PAYING &gt;&gt;</Button> */}
     </div>
   );
 };
 
-export default ShipDetail;
+export default Payment;
