@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/crush-cake/static/css/main.0c33e930.css",
-    "main.js": "/crush-cake/static/js/main.95be3848.js",
-    "static/media/Gulfs Display Extra Expanded Italic.ttf": "/crush-cake/static/media/Gulfs Display Extra Expanded Italic.ac542e07cbc0cf6e1bab.ttf",
-    "static/media/Asset 1.svg": "/crush-cake/static/media/Asset 1.32b472cc0aa89ff47adeaddc5711e72a.svg",
-    "static/media/blog title.svg": "/crush-cake/static/media/blog title.1878db714dc96cc562b5f7447ee0aed7.svg",
-    "index.html": "/crush-cake/index.html",
-    "main.0c33e930.css.map": "/crush-cake/static/css/main.0c33e930.css.map",
-    "main.95be3848.js.map": "/crush-cake/static/js/main.95be3848.js.map"
+    "main.css": "/dustinn1235.github.io/crush-cake/static/css/main.d44e6754.css",
+    "main.js": "/dustinn1235.github.io/crush-cake/static/js/main.ce2fc70b.js",
+    "static/media/About us.svg": "/dustinn1235.github.io/crush-cake/static/media/About us.c093511c693177b6afc2cc761b3b2f7c.svg",
+    "static/media/Gulfs Display Expanded.ttf": "/dustinn1235.github.io/crush-cake/static/media/Gulfs Display Expanded.e39bf89ba5bcdc247ebd.ttf",
+    "static/media/Gulfs Display Extra Expanded Italic.ttf": "/dustinn1235.github.io/crush-cake/static/media/Gulfs Display Extra Expanded Italic.ac542e07cbc0cf6e1bab.ttf",
+    "static/media/Asset 1.svg": "/dustinn1235.github.io/crush-cake/static/media/Asset 1.32b472cc0aa89ff47adeaddc5711e72a.svg",
+    "static/media/blog title.svg": "/dustinn1235.github.io/crush-cake/static/media/blog title.1878db714dc96cc562b5f7447ee0aed7.svg",
+    "index.html": "/dustinn1235.github.io/crush-cake/index.html",
+    "main.d44e6754.css.map": "/dustinn1235.github.io/crush-cake/static/css/main.d44e6754.css.map",
+    "main.ce2fc70b.js.map": "/dustinn1235.github.io/crush-cake/static/js/main.ce2fc70b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c33e930.css",
-    "static/js/main.95be3848.js"
+    "static/css/main.d44e6754.css",
+    "static/js/main.ce2fc70b.js"
   ]
 }
