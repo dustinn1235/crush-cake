@@ -18,6 +18,11 @@ const Checkout = () => {
   const element = steps[curStep];
   const boldStyle = { fontWeight: 600 };
 
+  // reset billing step when cart is empty
+  useEffect(() => {
+    isCartEmpty && setCurStep(0);
+  }, [cart]);
+
   return (
     <div className="checkout-wrapper">
       {isCartEmpty ? (
