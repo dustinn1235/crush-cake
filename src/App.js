@@ -15,8 +15,6 @@ function App() {
   /* 
   TODO 
   homepage:
-  add link to bulletin : custom cake / discount
-  add link to about us homepage
   add link to blog post footer
   add copy right footer
   create blog page / post
@@ -33,8 +31,13 @@ function App() {
   finish page
 
   cart:
-  add payment method page
-  add order confirmation page
+  info validation and error check
+  shipping price different for option
+  disable cart edit on payment step and confirm step
+  finish payment page
+  finish confirmation page
+
+  mobile: responsive layout design
    */
 
   const { pathname } = useLocation();
