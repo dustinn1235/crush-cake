@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import Title from "../components/Title";
 import { UserContext } from "../contexts/UserContext";
+import { ReactComponent as Logo } from "../assets/small bite big taste.svg";
 
 const Menu = () => {
   const { cart, setCart, products } = useContext(UserContext);
@@ -34,8 +35,11 @@ const Menu = () => {
         <h3>
           CAKE<br></br>POP
         </h3>
-        <div className="content">
-          <h4>Small bite, big taste</h4>
+        <div
+          className="content"
+          style={{ paddingTop: "10%", paddingLeft: "2%" }}
+        >
+          <Logo id="logosvg"></Logo>
           <p>
             Don't miss out the cute little lollipop cake. The cake core is
             created with many different flavors such as chocolate cake, pound
@@ -49,14 +53,13 @@ const Menu = () => {
       </Link>
       <Link
         className="big-banner"
-        style={{ paddingTop: "10%" }}
+        style={{ paddingTop: "12%" }}
         to="/menu/customcake"
       >
         <h3 style={{ fontSize: "2.3rem" }}>
           CUSTOM<br></br>CAKE
         </h3>
         <div className="content">
-          <h4>Small bite, big taste</h4>
           <p>
             Are you in need of a cake that is out of this world? Look no further
             than Custom Cake. Our cakes will amaze and delight your guests with

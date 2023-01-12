@@ -22,13 +22,6 @@ function App() {
   create blog page / post
   create event page / promotion
 
-  menu:
-  add background decoration
-  fix custom cake banner
-  
-  cakepop:
-  add image to cake pop page
-
   custom cake:
   finish page
 

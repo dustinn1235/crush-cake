@@ -84,6 +84,11 @@
   padding-left: 2%;
 }
 
+.billing-container .css-ahj2mt-MuiTypography-root {
+  width: 100%;
+  padding-right: 5%;
+}
+
 .billing-container button {
   font-size: 1.3rem;
   font-family: inherit;

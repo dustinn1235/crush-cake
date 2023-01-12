@@ -9,7 +9,7 @@
 .menu-wrapper .big-banner {
   display: flex;
   width: 80%;
-  height: 20rem;
+  height: auto;
   background-color: white;
   padding: 5%;
   padding-left: 3.5%;
@@ -47,9 +47,17 @@
 }
 
 .menu-wrapper .big-banner .content {
-  text-indent: 1rem;
+  text-indent: 5%;
   font-size: 1.2rem;
   width: 75%;
+  position: relative;
+}
+
+.menu-wrapper #logosvg {
+  position: absolute;
+  transform: scale(0.35);
+  left: -50%;
+  top: -50%;
 }
 
 .menu-wrapper #cakepop1 {
@@ -148,6 +156,9 @@
 .menu-wrapper #img-grid-element {
   grid-area: img;
   aspect-ratio: 1/1;
+  background-image: url("/public/img/cakepopppp.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .menu-wrapper #dough-grid-element {
