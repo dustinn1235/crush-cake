@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { IoBagHandleOutline } from "react-icons/io5";
-import "../../css/menu/Menu.css";
+import "../css/menu/Menu.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import Title from "../Title";
-import { UserContext } from "../../contexts/UserContext";
+import Title from "../components/Title";
+import { UserContext } from "../contexts/UserContext";
 
 const Menu = () => {
   const { cart, setCart, products } = useContext(UserContext);

@@ -1,12 +1,12 @@
 import { Button } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
-import { UserContext } from "../../contexts/UserContext";
-import "../../css/checkout/Checkout.css";
-import Cart from "./Cart";
-import EmptyCart from "./EmptyCart";
-import Payment from "./Payment";
-import ShipDetail from "./ShipDetail";
-import OrderConfirm from "./OrderConfirm";
+import { UserContext } from "../contexts/UserContext";
+import "../css/checkout/Checkout.css";
+import Cart from "../components/checkout/Cart";
+import EmptyCart from "../components/checkout/EmptyCart";
+import Payment from "../components/checkout/Payment";
+import ShipDetail from "../components/checkout/ShipDetail";
+import OrderConfirm from "../components/checkout/OrderConfirm";
 
 const Checkout = () => {
   const { cart } = useContext(UserContext);

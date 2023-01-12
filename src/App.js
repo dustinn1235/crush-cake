@@ -1,15 +1,17 @@
 import "./css/App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Homepage from "./components/home/Homepage";
-import Menu from "./components/menu/Menu";
+import Homepage from "./pages/Homepage";
+import Menu from "./pages/Menu";
 import Cakepop from "./components/menu/Cakepop";
 import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
-import Checkout from "./components/checkout/Checkout";
+import Checkout from "./pages/Checkout";
 import { UserContext, products } from "./contexts/UserContext";
 import { useEffect, useState } from "react";
+import Events from "./pages/Events";
+import Blog from "./pages/Blog";
 
 function App() {
   /* 
@@ -73,6 +75,8 @@ function App() {
             </Route>
             <Route path="/about" element={<About></About>}></Route>
             <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+            <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/events" element={<Events></Events>}></Route>
           </Routes>
           <Footer></Footer>
         </div>
