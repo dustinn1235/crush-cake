@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.619af3b1.css",
-    "main.js": "/static/js/main.c57460dd.js",
-    "static/media/About us.svg": "/static/media/About us.c093511c693177b6afc2cc761b3b2f7c.svg",
-    "static/media/Gulfs Display Expanded.ttf": "/static/media/Gulfs Display Expanded.e39bf89ba5bcdc247ebd.ttf",
-    "static/media/Gulfs Display Extra Expanded Italic.ttf": "/static/media/Gulfs Display Extra Expanded Italic.ac542e07cbc0cf6e1bab.ttf",
-    "static/media/Asset 1.svg": "/static/media/Asset 1.32b472cc0aa89ff47adeaddc5711e72a.svg",
-    "static/media/blog title.svg": "/static/media/blog title.1878db714dc96cc562b5f7447ee0aed7.svg",
-    "index.html": "/index.html",
-    "main.619af3b1.css.map": "/static/css/main.619af3b1.css.map",
-    "main.c57460dd.js.map": "/static/js/main.c57460dd.js.map"
+    "main.css": "/crush-cake/static/css/main.30276e39.css",
+    "main.js": "/crush-cake/static/js/main.c452d64d.js",
+    "static/media/About us.svg": "/crush-cake/static/media/About us.c093511c693177b6afc2cc761b3b2f7c.svg",
+    "static/media/Gulfs Display Expanded.ttf": "/crush-cake/static/media/Gulfs Display Expanded.e39bf89ba5bcdc247ebd.ttf",
+    "static/media/Gulfs Display Extra Expanded Italic.ttf": "/crush-cake/static/media/Gulfs Display Extra Expanded Italic.ac542e07cbc0cf6e1bab.ttf",
+    "static/media/Asset 1.svg": "/crush-cake/static/media/Asset 1.32b472cc0aa89ff47adeaddc5711e72a.svg",
+    "static/media/blog title.svg": "/crush-cake/static/media/blog title.1878db714dc96cc562b5f7447ee0aed7.svg",
+    "index.html": "/crush-cake/index.html",
+    "main.30276e39.css.map": "/crush-cake/static/css/main.30276e39.css.map",
+    "main.c452d64d.js.map": "/crush-cake/static/js/main.c452d64d.js.map"
   },
   "entrypoints": [
-    "static/css/main.619af3b1.css",
-    "static/js/main.c57460dd.js"
+    "static/css/main.30276e39.css",
+    "static/js/main.c452d64d.js"
   ]
 }
