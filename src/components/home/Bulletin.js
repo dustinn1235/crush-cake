@@ -22,7 +22,7 @@ const Bulletin = () => {
       <div className="bulletin">
         <Link className="cake-banner" to="menu/customcake">
           <div className="img-wrapper">
-            <img alt="pop up cake" src="./PopUpCake.png"></img>
+            <img alt="pop up cake" src="img/PopUpCake.png"></img>
           </div>
           <h1 className="outline">Custom Cake</h1>
           <h1 className="title">Custom Cake</h1>
@@ -30,7 +30,7 @@ const Bulletin = () => {
         <Link className="discount-banner" to="events">
           <div className="img-wrapper">
             <img
-              src="./discount.png"
+              src="img/discount.png"
               style={{ transform: "scale(0.8)" }}
               alt="discount banner"
             ></img>

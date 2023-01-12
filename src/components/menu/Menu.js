@@ -44,8 +44,8 @@ const Menu = () => {
             to customer's request.
           </p>
         </div>
-        <img src="./cakepop 1.png" id="cakepop1" alt="cakepop1"></img>
-        <img src="./cakepop 2.png" id="cakepop2" alt="cakepop2"></img>
+        <img src="img/cakepop 1.png" id="cakepop1" alt="cakepop1"></img>
+        <img src="img/cakepop 2.png" id="cakepop2" alt="cakepop2"></img>
       </Link>
       <Link
         className="big-banner"
@@ -64,12 +64,20 @@ const Menu = () => {
             sure to find the perfect cake for your special occasion.
           </p>
         </div>
-        <img src="/Heart-Anni Cake.png" id="customcake1" alt="cakepop1"></img>
-        <img src="/Chocolate Cake.png" id="customcake2" alt="cakepop1"></img>
+        <img
+          src="/img/Heart-Anni Cake.png"
+          id="customcake1"
+          alt="cakepop1"
+        ></img>
+        <img
+          src="/img/Chocolate Cake.png"
+          id="customcake2"
+          alt="cakepop1"
+        ></img>
       </Link>
       <div className="banner-container">
         <div className="cookie banner">
-          <img src="./cookie 3.png" alt="cakepop1"></img>
+          <img src="/img/cookie 3.png" alt="cakepop1"></img>
           <h1>Cookie</h1>
           <p>
             A famous and poular cake in European and Merican markets. Cookies
@@ -87,7 +95,7 @@ const Menu = () => {
           </Button>
         </div>
         <div className="brownie banner">
-          <img src="./brownie.png" alt="cakepop1"></img>
+          <img src="/img/brownie.png" alt="cakepop1"></img>
           <h1>Brownie</h1>
           <p>
             Brownie originated in England with the main ingredient being Dark
