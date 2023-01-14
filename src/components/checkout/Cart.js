@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 import CartItem from "./CartItem";
 
-const Cart = () => {
+const Cart = ({ shipPrice }) => {
   const { cart } = useContext(UserContext);
   const productsArr = Array.from(cart.keys());
 
@@ -10,7 +10,7 @@ const Cart = () => {
   for (let key of productsArr) {
     subTotal += cart.get(key) * key.price;
   }
-  const shipping = 10;
+  const shipping = shipPrice;
   const taxRate = 1.05;
   const tax = subTotal * taxRate;
   const total = subTotal + tax + shipping;

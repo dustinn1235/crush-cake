@@ -159,6 +159,7 @@
   background-image: url("/public/img/cakepopppp.png");
   background-position: center;
   background-size: cover;
+  cursor: default;
 }
 
 .menu-wrapper #dough-grid-element {

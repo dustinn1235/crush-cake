@@ -8,7 +8,7 @@ import {
   TextField,
 } from "@mui/material";
 
-const ShipDetail = () => {
+const ShipDetail = ({ shipPrice, setShipPrice }) => {
   return (
     <div className="middle">
       <div className="contact-container">
@@ -35,24 +35,49 @@ const ShipDetail = () => {
           <TiStarFullOutline className="icon"></TiStarFullOutline>
           <p>DELIVERY METHOD</p>
         </div>
+
         <FormControl style={{ width: "100%" }}>
-          <RadioGroup className="form-container">
+          <RadioGroup
+            className="form-container"
+            defaultValue="4.99"
+            onChange={(e) => {
+              setShipPrice(e.target.value * 1);
+            }}
+          >
             <FormControlLabel
-              value="female"
+              value="4.99"
               control={<Radio />}
               label={
-                <p style={{ fontFamily: `"Montserrat", sans-serif` }}>
-                  Fast <span>(Standard delivery)</span>
+                <p
+                  style={{
+                    fontFamily: `"Montserrat", sans-serif`,
+                    display: "flex",
+                    marginRight: "1rem",
+                  }}
+                >
+                  Fast&nbsp;<span>(Standard delivery)</span>
+                  <span style={{ marginLeft: "auto", fontWeight: "500" }}>
+                    $4.99
+                  </span>
                 </p>
               }
               className="radio"
             />
             <FormControlLabel
-              value="male"
+              value="9.99"
               control={<Radio />}
               label={
-                <p style={{ fontFamily: `"Montserrat", sans-serif` }}>
+                <p
+                  style={{
+                    fontFamily: `"Montserrat", sans-serif`,
+                    display: "flex",
+                    marginRight: "1rem",
+                  }}
+                >
                   Express <span>(1-2 hours after shipping)</span>
+                  <span style={{ marginLeft: "auto", fontWeight: "500" }}>
+                    $9.99
+                  </span>
                 </p>
               }
               className="radio"

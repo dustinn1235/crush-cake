@@ -12,7 +12,12 @@ const Checkout = () => {
   const { cart } = useContext(UserContext);
   const isCartEmpty = cart.size === 0;
   const [curStep, setCurStep] = useState(0);
-  const steps = [ShipDetail, Payment, OrderConfirm];
+  const [shipPrice, setShipPrice] = useState(4.99);
+  const steps = [
+    <ShipDetail shipPrice={shipPrice} setShipPrice={setShipPrice} />,
+    <Payment />,
+    <OrderConfirm />,
+  ];
   const btnMsg = ["CONTINUE PAYING", "COMPLETE"];
 
   const element = steps[curStep];
@@ -44,14 +49,14 @@ const Checkout = () => {
                 ORDER CONFIRMATION
               </span>
             </div>
-            {element()}
+            {element}
             {curStep !== 2 && (
               <Button onClick={() => setCurStep(curStep + 1)}>
                 {btnMsg[curStep]} &gt;&gt;
               </Button>
             )}
           </div>
-          <Cart></Cart>
+          <Cart shipPrice={shipPrice}></Cart>
         </>
       )}
     </div>
