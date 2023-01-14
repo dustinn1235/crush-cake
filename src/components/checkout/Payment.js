@@ -1,7 +1,7 @@
 import { TiStarFullOutline } from "react-icons/ti";
 import "../../css/checkout/Payment.css";
 
-const Payment = ({ info, shipDetail }) => {
+const Payment = ({ info, shipDetail, setCurStep }) => {
   const infoLabels = ["Name", "Email", "Phone", "Address", "Delivery methods"];
   const shipMethod = shipDetail === 4.99 ? "Fast" : "Express";
 
@@ -20,6 +20,17 @@ const Payment = ({ info, shipDetail }) => {
             </div>
           );
         })}
+        <p
+          style={{
+            textDecoration: "underline",
+            color: "#6276a8",
+            marginTop: "0.7rem",
+            cursor: "pointer",
+          }}
+          onClick={() => setCurStep((cur) => cur - 1)}
+        >
+          Edit
+        </p>
       </div>
       <div className="header">
         <TiStarFullOutline className="icon"></TiStarFullOutline>

@@ -26,8 +26,9 @@ const Checkout = () => {
       inputEmailEl={inputEmailEl}
       inputPhoneEl={inputPhoneEl}
       inputAddressEl={inputAddressEl}
+      info={info}
     />,
-    <Payment info={info} shipPrice={shipPrice} />,
+    <Payment info={info} shipPrice={shipPrice} setCurStep={setCurStep} />,
     <OrderConfirm />,
   ];
   const btnMsg = ["CONTINUE PAYING", "COMPLETE"];
@@ -65,12 +66,13 @@ const Checkout = () => {
             {curStep !== 2 && (
               <Button
                 onClick={() => {
-                  setInfo({
-                    name: inputNameEl.current.value,
-                    email: inputEmailEl.current.value,
-                    phone: inputPhoneEl.current.value,
-                    address: inputAddressEl.current.value,
-                  });
+                  if (curStep === 0)
+                    setInfo({
+                      name: inputNameEl.current.value,
+                      email: inputEmailEl.current.value,
+                      phone: inputPhoneEl.current.value,
+                      address: inputAddressEl.current.value,
+                    });
                   setCurStep(curStep + 1);
                 }}
               >

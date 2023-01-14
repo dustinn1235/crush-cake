@@ -14,9 +14,8 @@ const ShipDetail = ({
   inputEmailEl,
   inputPhoneEl,
   inputAddressEl,
+  info: { name, email, phone, address },
 }) => {
-  const test = true;
-
   return (
     <div className="middle">
       <div className="contact-container">
@@ -33,24 +32,28 @@ const ShipDetail = ({
             label="Name"
             className="textform"
             size="small"
+            defaultValue={name}
           />
           <TextField
             inputRef={inputEmailEl}
             label="Email"
             className="textform"
             size="small"
+            defaultValue={email}
           />
           <TextField
             inputRef={inputPhoneEl}
             label="Phone No"
             className="textform"
             size="small"
+            defaultValue={phone}
           />
           <TextField
             inputRef={inputAddressEl}
             label="Address"
             className="textform"
             size="small"
+            defaultValue={address}
           />
         </div>
         <div>
