@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
 import "../css/checkout/Checkout.css";
 import Cart from "../components/checkout/Cart";
@@ -9,13 +9,25 @@ import ShipDetail from "../components/checkout/ShipDetail";
 import OrderConfirm from "../components/checkout/OrderConfirm";
 
 const Checkout = () => {
+  const inputNameEl = useRef(null);
+  const inputEmailEl = useRef(null);
+  const inputPhoneEl = useRef(null);
+  const inputAddressEl = useRef(null);
+
   const { cart } = useContext(UserContext);
   const isCartEmpty = cart.size === 0;
   const [curStep, setCurStep] = useState(0);
   const [shipPrice, setShipPrice] = useState(4.99);
+  const [info, setInfo] = useState({});
   const steps = [
-    <ShipDetail shipPrice={shipPrice} setShipPrice={setShipPrice} />,
-    <Payment />,
+    <ShipDetail
+      setShipPrice={setShipPrice}
+      inputNameEl={inputNameEl}
+      inputEmailEl={inputEmailEl}
+      inputPhoneEl={inputPhoneEl}
+      inputAddressEl={inputAddressEl}
+    />,
+    <Payment info={info} shipPrice={shipPrice} />,
     <OrderConfirm />,
   ];
   const btnMsg = ["CONTINUE PAYING", "COMPLETE"];
@@ -51,7 +63,17 @@ const Checkout = () => {
             </div>
             {element}
             {curStep !== 2 && (
-              <Button onClick={() => setCurStep(curStep + 1)}>
+              <Button
+                onClick={() => {
+                  setInfo({
+                    name: inputNameEl.current.value,
+                    email: inputEmailEl.current.value,
+                    phone: inputPhoneEl.current.value,
+                    address: inputAddressEl.current.value,
+                  });
+                  setCurStep(curStep + 1);
+                }}
+              >
                 {btnMsg[curStep]} &gt;&gt;
               </Button>
             )}

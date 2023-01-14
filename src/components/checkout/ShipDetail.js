@@ -8,7 +8,15 @@ import {
   TextField,
 } from "@mui/material";
 
-const ShipDetail = ({ shipPrice, setShipPrice }) => {
+const ShipDetail = ({
+  setShipPrice,
+  inputNameEl,
+  inputEmailEl,
+  inputPhoneEl,
+  inputAddressEl,
+}) => {
+  const test = true;
+
   return (
     <div className="middle">
       <div className="contact-container">
@@ -20,10 +28,30 @@ const ShipDetail = ({ shipPrice, setShipPrice }) => {
           Become a member now to get more offers <a>Sign up</a>
         </p>
         <div className="form-container">
-          <TextField label="Name" className="textform" size="small" />
-          <TextField label="Email" className="textform" size="small" />
-          <TextField label="Phone No" className="textform" size="small" />
-          <TextField label="Address" className="textform" size="small" />
+          <TextField
+            inputRef={inputNameEl}
+            label="Name"
+            className="textform"
+            size="small"
+          />
+          <TextField
+            inputRef={inputEmailEl}
+            label="Email"
+            className="textform"
+            size="small"
+          />
+          <TextField
+            inputRef={inputPhoneEl}
+            label="Phone No"
+            className="textform"
+            size="small"
+          />
+          <TextField
+            inputRef={inputAddressEl}
+            label="Address"
+            className="textform"
+            size="small"
+          />
         </div>
         <div>
           <Checkbox></Checkbox>
