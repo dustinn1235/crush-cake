@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 import CartItem from "./CartItem";
 
-const Cart = ({ shipPrice }) => {
+const Cart = ({ shipPrice, curStep }) => {
   const { cart } = useContext(UserContext);
   const productsArr = Array.from(cart.keys());
 
@@ -19,7 +19,7 @@ const Cart = ({ shipPrice }) => {
     <div className="cart-container">
       <div className="cart-items-container">
         {productsArr.map((e) => (
-          <CartItem key={e.name} item={e}></CartItem>
+          <CartItem key={e.name} item={e} curStep={curStep}></CartItem>
         ))}
       </div>
       <div

@@ -80,7 +80,7 @@ const Checkout = () => {
               </Button>
             )}
           </div>
-          <Cart shipPrice={shipPrice}></Cart>
+          <Cart shipPrice={shipPrice} curStep={curStep}></Cart>
         </>
       )}
     </div>

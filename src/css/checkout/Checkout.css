@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   gap: 2%;
+  height: 47.65rem;
 }
 
 .billing-container {
@@ -160,7 +161,7 @@
   grid-template-columns: 1fr 2fr 1fr;
   width: 50%;
   border-radius: 10rem;
-  gap: 5%;
+  /* gap: 5%; */
 }
 
 .cart-item .button-container button {
@@ -246,7 +247,7 @@
   .checkout-wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    height: auto;
   }
   .checkout-wrapper > * {
     width: 100%;
@@ -268,6 +269,8 @@
     padding-left: 15%;
     padding-right: 15%;
     height: 75%;
+    max-height: 44rem;
+    row-gap: 2.5rem;
   }
 
   .billing-container .icon {

@@ -2,10 +2,12 @@ import { Button } from "@mui/material";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, curStep }) => {
   const { cart, setCart } = useContext(UserContext);
   const quantity = cart.get(item);
   const isOne = quantity === 1;
+  const hidden = curStep !== 0 ? true : false;
+  const style = { opacity: "0" };
 
   const changeItem = (action) => {
     const offset = action === "increase" ? 1 : -1;
@@ -32,18 +34,29 @@ const CartItem = ({ item }) => {
       <div className="button-container">
         <button
           className="button-61"
-          disabled={isOne}
+          disabled={isOne || hidden}
           onClick={() => changeItem("decrease")}
+          style={hidden ? style : {}}
         >
           -
         </button>
         <p className="input">{quantity}</p>
-        <button className="button-61" onClick={() => changeItem("increase")}>
+        <button
+          className="button-61"
+          onClick={() => changeItem("increase")}
+          disabled={hidden}
+          style={hidden ? style : {}}
+        >
           +
         </button>
       </div>
       <span className="price">${(quantity * item.price).toFixed(2)}</span>
-      <Button id="removeBtn" onClick={removeItem}>
+      <Button
+        id="removeBtn"
+        onClick={removeItem}
+        disabled={hidden}
+        style={hidden ? style : {}}
+      >
         &#10005;
       </Button>
     </div>
