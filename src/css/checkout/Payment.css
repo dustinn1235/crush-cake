@@ -5,11 +5,11 @@
   flex-direction: column;
 }
 
-.info-container > :not(:last-child) {
+.middle .info-container > :not(:last-child) {
   border-bottom: 0.1rem solid;
 }
 
-.info-element {
+.middle .info-element {
   display: flex;
   width: 100%;
   padding-bottom: 1rem;
@@ -17,25 +17,28 @@
 }
 
 .middle .payment-container {
-  border: 2px solid;
+  margin-top: 1rem;
+  border: 0.12rem solid;
+  border-radius: 1.5rem;
+  overflow: hidden;
   width: 100%;
   height: auto;
 }
 
-.payment-el {
+.middle .payment-el {
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 2rem;
-  height: 2.5rem;
+  height: 2.9rem;
   border-bottom: 0.1rem solid;
 }
 
-.payment-el p {
+.middle .payment-el p {
   font-size: 1rem;
 }
 
-.payment-el input {
+.middle .payment-el input {
   font-size: 1rem;
   border: none;
   width: 100%;
@@ -44,15 +47,20 @@
   background-color: #ebebeb;
 }
 
-.payment-el textarea:focus,
-.payment-el input:focus {
+.middle .payment-el textarea:focus,
+.middle .payment-el input:focus {
   outline: none;
 }
 
-.payment-content {
+.middle .payment-content {
   height: 0;
   overflow: hidden;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.15s ease-in-out;
+}
+
+.method-header {
+  padding-top: 1%;
+  padding-bottom: 1%;
 }

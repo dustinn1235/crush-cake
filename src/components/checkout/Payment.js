@@ -1,17 +1,28 @@
-import { Radio } from "@mui/material";
 import { TiStarFullOutline } from "react-icons/ti";
 import { FaCcVisa } from "react-icons/fa";
 import { FaCcMastercard } from "react-icons/fa";
 import { FaPaypal } from "react-icons/fa";
 import "../../css/checkout/Payment.css";
 import { useState } from "react";
+import { Button } from "@mui/material";
+import { ReactComponent as PayPalLogo } from "../../assets/paypal.svg";
 
 const Payment = ({ info, shipDetail, setCurStep }) => {
   const infoLabels = ["Name", "Email", "Phone", "Address", "Delivery methods"];
   const shipMethod = shipDetail === 4.99 ? "Fast" : "Express";
-  const [style, setStyle] = useState({});
-  const setMethod = () => {
-    setStyle({ transform: "scaleY(1)", height: "auto" });
+  const [style1, setStyle1] = useState({
+    transform: "scaleY(1)",
+    height: "auto",
+  });
+  const [style2, setStyle2] = useState({});
+  const setMethod = (value) => {
+    if (value === "credit") {
+      setStyle1({ transform: "scaleY(1)", height: "auto" });
+      setStyle2({ transform: "scaleY(0)", height: "0" });
+    } else {
+      setStyle2({ transform: "scaleY(1)", height: "auto" });
+      setStyle1({ transform: "scaleY(0)", height: "0" });
+    }
   };
 
   return (
@@ -50,11 +61,17 @@ const Payment = ({ info, shipDetail, setCurStep }) => {
         <div className="payment-container">
           <div>
             <div className="payment-el method-header">
-              <Radio style={{ height: "100%" }} onClick={setMethod}></Radio>
+              <input
+                type="radio"
+                style={{ height: "60%", width: "10%" }}
+                name="group1"
+                defaultChecked
+                onClick={() => setMethod("credit")}
+              ></input>
               <p>Credit card</p>
               <FaCcVisa /> <FaCcMastercard />
             </div>
-            <div className="payment-content" style={style}>
+            <div className="payment-content" style={style1}>
               <div className="payment-el">
                 <input placeholder="Card number"></input>
               </div>
@@ -74,14 +91,44 @@ const Payment = ({ info, shipDetail, setCurStep }) => {
             </div>
           </div>
           <div>
-            <div className="payment-el method-header">
-              <Radio style={{ height: "100%" }} onClick={setMethod}></Radio>
+            <div
+              className="payment-el method-header"
+              style={{ border: "none" }}
+            >
+              <input
+                type="radio"
+                style={{ height: "60%", width: "10%" }}
+                name="group1"
+                onClick={() => setMethod("paypal")}
+              ></input>
               <p>Paypal</p>
               <FaPaypal />
             </div>
-            <div className="payment-content" style={style}>
-              <div className="payment-el">
-                <input placeholder="Card number"></input>
+            <div className="payment-content" style={style2}>
+              <div
+                className="payment-el"
+                style={{
+                  borderBottom: "none",
+                  borderTop: "0.1rem solid",
+                  height: "4rem",
+                }}
+              >
+                <Button
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    bgcolor: "#ffc439",
+                    ":hover": { bgcolor: "#f2ba36" },
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    p: "0",
+                  }}
+                >
+                  <PayPalLogo
+                    style={{ height: "80%", width: "auto" }}
+                  ></PayPalLogo>
+                </Button>
               </div>
             </div>
           </div>
