@@ -36,7 +36,9 @@
 
 .cakecreate-container .img-container {
   grid-area: image;
-  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .cakecreate-container .steps-container {
@@ -44,20 +46,23 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10%;
-  border: 2px solid;
 }
 
 .cakecreate-container .step {
+  background-image: url(/public/img/step1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
   border: 0.2rem solid var(--darkPrimary);
   border-radius: 1.5rem;
+  aspect-ratio: 1/1;
 }
 
 .cakecreate-container .options-container {
   grid-area: options;
-  border: 2px solid;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 1.5rem;
 }
 

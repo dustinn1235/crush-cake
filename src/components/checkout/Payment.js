@@ -7,9 +7,9 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import { ReactComponent as PayPalLogo } from "../../assets/paypal.svg";
 
-const Payment = ({ info, shipDetail, setCurStep }) => {
+const Payment = ({ info, shipPrice, setCurStep }) => {
   const infoLabels = ["Name", "Email", "Phone", "Address", "Delivery methods"];
-  const shipMethod = shipDetail === 4.99 ? "Fast" : "Express";
+  const shipMethod = shipPrice === 4.99 ? "Fast" : "Express";
   const [style1, setStyle1] = useState({
     transform: "scaleY(1)",
     height: "auto",
