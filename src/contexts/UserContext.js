@@ -31,5 +31,10 @@ const products = [
     img: "/img/cakepop 1 (1).png",
   },
 ];
+const customCake = {
+  name: "Custom Cake",
+  price: "19.99",
+  img: "/img/Chocolate Cake.png",
+};
 export const UserContext = createContext(null);
-export { products };
+export { products, customCake };

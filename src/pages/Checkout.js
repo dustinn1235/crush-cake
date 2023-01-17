@@ -39,7 +39,7 @@ const Checkout = () => {
   // reset billing step when cart is empty
   useEffect(() => {
     isCartEmpty && setCurStep(0);
-  }, [cart]);
+  }, [isCartEmpty]);
 
   return (
     <div className="checkout-wrapper">

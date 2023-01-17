@@ -1,9 +1,23 @@
 import { Button } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { UserContext } from "../../contexts/UserContext";
 import "../../css/menu/CustomCake.css";
 import Title from "../Title";
+import { customCake } from "../../contexts/UserContext";
 
 const CustomCake = () => {
+  const { cart, setCart } = useContext(UserContext);
+
+  const addProduct = (product) => {
+    if (cart.has(product)) {
+      cart.set(product, cart.get(product) + 1);
+      setCart(new Map(cart));
+    } else {
+      cart.set(product, 1);
+      setCart(new Map(cart));
+    }
+  };
+
   const urls = [
     "/img/step1.png",
     "/img/step2.png",
@@ -23,6 +37,10 @@ const CustomCake = () => {
   ];
   const [curStep, setCurStep] = useState(1);
 
+  const options = [["/img/step1.png", "/img/step1.png"]];
+  // Can be implement into whole cake state, 1 step1 option for now
+  const [shape, setShape] = useState(0);
+
   return (
     <div>
       <Title title="Custom Cake"></Title>
@@ -33,6 +51,7 @@ const CustomCake = () => {
         </div>
         <div className="img-container">
           <img
+            alt="cake"
             src="/img/Chocolate Cake.png"
             style={{
               width: "50%",
@@ -55,12 +74,19 @@ const CustomCake = () => {
           ))}
         </div>
         <div className="options-container">
-          <div className="option"></div>
-          <div className="option"></div>
-          <div className="option"></div>
+          {options[curStep - 1]?.map((e, i) => (
+            <Button
+              className="option"
+              style={{
+                backgroundImage: `url(${e})`,
+                backgroundColor: `${shape === i ? "var(--primary)" : "white"}`,
+              }}
+              onClick={() => setShape(i)}
+            ></Button>
+          ))}
         </div>
         <div className="button-container">
-          <Button>Done! &gt;&gt;&gt;</Button>
+          <Button onClick={() => addProduct(customCake)}>Done! &gt;&gt;&gt;</Button>
         </div>
       </div>
     </div>

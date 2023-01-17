@@ -28,7 +28,8 @@ const CartItem = ({ item, curStep }) => {
       <div className="product-detail-container">
         <h3>{item.name}</h3>
         <p>
-          - Caramel filling brownie<br></br>- sad<br></br>- sad
+          - Lorem ipsum dolor sit <br></br>- Eu augue ut lectus
+          <br></br>- Auctor urna nunc id cursus
         </p>
       </div>
       <div className="button-container">
