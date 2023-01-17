@@ -22,15 +22,8 @@ function App() {
   create blog page / post
   create event page / promotion
 
-  custom cake:
-  finish page
-
   cart:
   info validation and error check
-  shipping price different for option
-  disable cart edit on payment step and confirm step
-  finish payment page
-  finish confirmation page
 
   mobile: responsive layout design
    */
