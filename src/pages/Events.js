@@ -30,10 +30,26 @@ const Events = () => {
       </div>
       <div className="long-wrapper">
         <div className="long-banner">
-          <div>15%</div>
+          <div id="banner-title1">
+            <h1>15</h1>
+            <p>%</p>
+          </div>
           <p>OFFER FOR NEW CUSTOMER'S FIRST ORDER</p>
         </div>
-        <div className="long-banner"></div>
+        <div className="long-banner">
+          <div id="banner-title2">
+            <div id="buy1get1">
+              <p>
+                BUY
+                <br />
+                GET
+              </p>
+              <h1>1</h1>
+            </div>
+            <p id="free">FREE</p>
+          </div>
+          <p>OFFER WHEN BUYING FROM THIRD PRODUCTS</p>
+        </div>
       </div>
     </div>
   );

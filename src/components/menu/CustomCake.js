@@ -62,6 +62,7 @@ const CustomCake = () => {
         <div className="steps-container">
           {urls.map((e, i) => (
             <Button
+              key={i}
               className="step"
               style={{
                 backgroundImage: `url(${e})`,
@@ -76,6 +77,7 @@ const CustomCake = () => {
         <div className="options-container">
           {options[curStep - 1]?.map((e, i) => (
             <Button
+              key={i}
               className="option"
               style={{
                 backgroundImage: `url(${e})`,
@@ -86,7 +88,9 @@ const CustomCake = () => {
           ))}
         </div>
         <div className="button-container">
-          <Button onClick={() => addProduct(customCake)}>Done! &gt;&gt;&gt;</Button>
+          <Button onClick={() => addProduct(customCake)}>
+            Done! &gt;&gt;&gt;
+          </Button>
         </div>
       </div>
     </div>
