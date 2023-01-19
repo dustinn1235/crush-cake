@@ -36,7 +36,13 @@ function App() {
   };
 
   const findTheme = () => {
+    console.log(pathname);
     if (pathname.includes("menu")) return themeBlue;
+    else if (pathname === "/blog")
+      return {
+        ...themeBlue,
+        backgroundImage: "linear-gradient(var(--darkPrimary), white)",
+      };
   };
   const [cart, setCart] = useState(new Map());
 
