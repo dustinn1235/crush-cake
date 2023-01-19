@@ -3,10 +3,10 @@ import "../../css/home/Blog.css";
 import { GoTriangleRight } from "react-icons/go";
 import { ReactComponent as BlogTitle } from "../../assets/blog title.svg";
 
-const Blog = () => {
+const Blog = ({ display }) => {
   return (
     <div className="blog-wrapper">
-      <h1>BLOG</h1>
+      {display && <h1>BLOG</h1>}
       <div id="blog1">
         <img src="/img/Blog Banner.png" alt="blog banner"></img>
         <BlogTitle className="title"></BlogTitle>

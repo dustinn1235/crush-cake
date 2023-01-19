@@ -14,7 +14,7 @@
   height: 20rem;
   background-color: rgb(247, 140, 140);
   border-radius: 2rem;
-  box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
+  box-shadow: 0.15rem 0.12rem 0.5rem 0.3rem var(--darkPrimary);
   overflow: hidden;
   position: relative;
   display: flex;
@@ -48,7 +48,7 @@
 
 .blog-wrapper .icon {
   font-size: 3rem;
-  color: #f4a1ae;
+  color: var(--darkPrimary);
   margin-bottom: 20%;
 }
 
@@ -61,12 +61,12 @@
   color: white;
   font-weight: 400;
   font-family: "Gulfs-R";
-  text-shadow: 5px 5px 3px #f4a1ae;
+  text-shadow: 5px 5px 3px var(--darkPrimary);
   margin-top: -1rem;
 }
 
 .blog-wrapper #blog2 #post {
-  box-shadow: 0.15rem 0.12rem 0.1rem 0.12rem #f4a1ae;
+  box-shadow: 0.15rem 0.12rem 0.5rem 0.3rem var(--darkPrimary);
   overflow: hidden;
   position: relative;
   padding-left: 3%;

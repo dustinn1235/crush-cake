@@ -18,7 +18,7 @@ const Homepage = () => {
       <Bulletin></Bulletin>
       <Products title="DESSERT" products={displayProducts}></Products>
       <AboutUs></AboutUs>
-      <Blog></Blog>
+      <Blog display="true"></Blog>
     </div>
   );
 };

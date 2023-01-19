@@ -11,7 +11,7 @@ import Checkout from "./pages/Checkout";
 import { UserContext, products } from "./contexts/UserContext";
 import { useEffect, useState } from "react";
 import Events from "./pages/Events";
-import Blog from "./pages/Blog";
+import Blog from "./pages/BlogPage";
 
 function App() {
   /* 
