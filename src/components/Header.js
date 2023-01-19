@@ -22,11 +22,11 @@ const Header = ({ pathname }) => {
         </Link>
         <section>
           <div>
-            <a href="">VIE</a>
+            <a href="#">VIE</a>
             <span>|</span>
-            <a href="">ENG</a>
+            <a href="#">ENG</a>
           </div>
-          <a className="icon" href="">
+          <a className="icon" href="#">
             <HiOutlineUserCircle></HiOutlineUserCircle>
           </a>
           <Link className="icon" to="/checkout">
