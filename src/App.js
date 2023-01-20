@@ -21,8 +21,6 @@ function App() {
   TODO 
   homepage:
   add copy right footer
-  create blog page / post
-  create event page / promotion
 
   cart:
   info validation and error check
@@ -41,7 +39,11 @@ function App() {
   const findTheme = () => {
     console.log(pathname);
     if (pathname.includes("menu")) return themeBlue;
-    else if (pathname === "/blog" || pathname === "/blog/1")
+    else if (
+      pathname === "/blog" ||
+      pathname === "/blog/" ||
+      pathname === "/blog/1"
+    )
       return {
         ...themeBlue,
         backgroundImage: "linear-gradient(var(--darkPrimary), #cdd3e3 65%)",
@@ -75,7 +77,6 @@ function App() {
               <Route index element={<Blog></Blog>}></Route>
               <Route path="1" element={<Blog1></Blog1>}></Route>
               <Route path="2" element={<Blog2></Blog2>}></Route>
-              <Route path="3" element={<Blog3></Blog3>}></Route>
             </Route>
             <Route path="/events" element={<Events></Events>}></Route>
           </Routes>

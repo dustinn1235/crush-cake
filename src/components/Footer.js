@@ -39,7 +39,9 @@ const Footer = () => {
           {blogPosts.map((e, i) => {
             return (
               <div key={e.name}>
-                <Link to={`blog/${i + 1}`}>{e.name}</Link>
+                <Link to={`blog/${i === blogPosts.length - 1 ? "#" : i + 1}`}>
+                  {e.name}
+                </Link>
                 {i !== blogPosts.length - 1 && (
                   <TiStarFullOutline
                     style={{ fontSize: "1.3rem", color: "#f5bec4" }}

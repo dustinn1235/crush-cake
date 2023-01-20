@@ -31,7 +31,7 @@ const Blog = ({ display }) => {
             <strong> Custom Cake</strong>. I want to give that person a gift
             prepared by myself, but I'm not good at it... So, here I come!"
           </p>
-          <Link to="/blog/3" className="grid-more">
+          <Link className="grid-more">
             {" "}
             {">"}
             {">"}

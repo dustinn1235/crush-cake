@@ -244,3 +244,45 @@
 }
 
 /* //////////////////////////////////////////////////////////////////////// */
+
+#blog2-wrapper {
+  width: 90%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+  row-gap: 2rem;
+  padding: 3% 5%;
+  border-radius: 2rem;
+}
+
+#blog2-wrapper #cake-img1 {
+  background-image: url(/public/img/cakeBlog1.JPEG);
+  width: 90%;
+  justify-self: center;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: inset 0 0 1rem 0.5rem white;
+  border-radius: 2rem;
+}
+
+#blog2-wrapper #cake-img2 {
+  background-image: url(/public/img/cakeBlog2.JPEG);
+  width: 70%;
+  justify-self: center;
+  height: 23rem;
+  grid-column: 1/-1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: inset 0 0 1rem 0.5rem white;
+  border-radius: 2rem;
+  margin-top: -1rem;
+}
+
+#blog2-wrapper p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
