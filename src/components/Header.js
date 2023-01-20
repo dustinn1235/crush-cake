@@ -15,17 +15,12 @@ const Header = ({ pathname }) => {
   };
 
   return (
-    <div>
+    <div className="header-l">
       <div className="header">
         <Link to="/" className="homepage">
           Crush
         </Link>
         <section>
-          <div>
-            <a href="#">VIE</a>
-            <span>|</span>
-            <a href="#">ENG</a>
-          </div>
           <a className="icon" href="#">
             <HiOutlineUserCircle></HiOutlineUserCircle>
           </a>

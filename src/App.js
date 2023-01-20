@@ -14,6 +14,7 @@ import Events from "./pages/Events";
 import Blog from "./pages/BlogPage";
 import Blog1 from "./components/Blogs/Blog1";
 import Blog2 from "./components/Blogs/Blog2";
+import HeaderMobile from "./components/HeaderMobile";
 
 function App() {
   /* 
@@ -62,6 +63,7 @@ function App() {
       <UserContext.Provider value={{ cart, setCart, products }}>
         <div className="App">
           <Header pathname={pathname}></Header>
+          <HeaderMobile pathname={pathname}></HeaderMobile>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
             <Route path="/menu">
