@@ -77,7 +77,7 @@ const ShipDetail = ({
           >
             <FormControlLabel
               value="4.99"
-              control={<Radio />}
+              control={<Radio style={{ width: "10%" }} />}
               label={
                 <p
                   style={{
@@ -86,17 +86,15 @@ const ShipDetail = ({
                     marginRight: "1rem",
                   }}
                 >
-                  Fast&nbsp;<span>(Standard delivery)</span>
-                  <span style={{ marginLeft: "auto", fontWeight: "500" }}>
-                    $4.99
-                  </span>
+                  Fast&nbsp;<p>(Standard delivery)</p>
+                  <p style={{ marginLeft: "auto", fontWeight: "500" }}>$4.99</p>
                 </p>
               }
               className="radio"
             />
             <FormControlLabel
               value="9.99"
-              control={<Radio />}
+              control={<Radio style={{ width: "10%" }} />}
               label={
                 <p
                   style={{
@@ -105,10 +103,8 @@ const ShipDetail = ({
                     marginRight: "1rem",
                   }}
                 >
-                  Express <span>(1-2 hours after shipping)</span>
-                  <span style={{ marginLeft: "auto", fontWeight: "500" }}>
-                    $9.99
-                  </span>
+                  Express <p>(1-2 hours after shipping)</p>
+                  <p style={{ marginLeft: "auto", fontWeight: "500" }}>$9.99</p>
                 </p>
               }
               className="radio"

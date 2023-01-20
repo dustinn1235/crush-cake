@@ -45,6 +45,7 @@
   height: 100%;
   padding-left: 1rem;
   background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .middle .payment-el textarea:focus,
