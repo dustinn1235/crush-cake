@@ -9,12 +9,11 @@ import About from "./components/About";
 import CustomCake from "./components/menu/CustomCake";
 import Checkout from "./pages/Checkout";
 import { UserContext, products } from "./contexts/UserContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Events from "./pages/Events";
 import Blog from "./pages/BlogPage";
 import Blog1 from "./components/Blogs/Blog1";
 import Blog2 from "./components/Blogs/Blog2";
-import Blog3 from "./components/Blogs/Blog3";
 
 function App() {
   /* 
@@ -37,7 +36,7 @@ function App() {
   };
 
   const findTheme = () => {
-    console.log(pathname);
+    // console.log(pathname);
     if (pathname.includes("menu")) return themeBlue;
     else if (
       pathname === "/blog" ||
@@ -52,9 +51,9 @@ function App() {
   };
   const [cart, setCart] = useState(new Map());
 
-  useEffect(() => {
-    console.log(cart);
-  }, [cart]);
+  // useEffect(() => {
+  //   console.log(cart);
+  // }, [cart]);
 
   return (
     <div className="wrapper" style={findTheme()}>

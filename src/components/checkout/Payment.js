@@ -30,7 +30,7 @@ const Payment = ({ info, shipPrice, setCurStep }) => {
       <div className="info-container">
         {infoLabels.map((e, i) => {
           return (
-            <div className="info-element">
+            <div className="info-element" key={e}>
               <p style={{ width: "40%", fontWeight: "500" }}>{e}</p>
               <p style={{ width: "60%", color: "#808080" }}>
                 {e === "Delivery methods"
