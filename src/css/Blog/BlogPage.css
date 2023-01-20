@@ -1,5 +1,65 @@
 #blogSpecial {
-  height: 30rem;
-  background-color: red;
-  width: 100%;
+  justify-self: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7rem;
+  position: relative;
+}
+
+#blogSpecial p {
+  width: 80%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#blogSpecial a {
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+#blogSpecial a:hover {
+  text-decoration: underline;
+}
+
+#dec1 {
+  width: 30%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  /* background-color: red; */
+  background-image: url(/public//img//decor1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  right: -19%;
+  bottom: -7%;
+}
+
+#dec2 {
+  width: 12%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-image: url(/public//img//decor3.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: -6%;
+  top: -6%;
+}
+
+#dec3 {
+  width: 20%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-image: url(/public//img//decor2.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  bottom: -9%;
+  left: 0;
 }

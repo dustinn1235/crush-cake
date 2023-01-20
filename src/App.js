@@ -12,12 +12,14 @@ import { UserContext, products } from "./contexts/UserContext";
 import { useEffect, useState } from "react";
 import Events from "./pages/Events";
 import Blog from "./pages/BlogPage";
+import Blog1 from "./components/Blogs/Blog1";
+import Blog2 from "./components/Blogs/Blog2";
+import Blog3 from "./components/Blogs/Blog3";
 
 function App() {
   /* 
   TODO 
   homepage:
-  add link to blog post footer
   add copy right footer
   create blog page / post
   create event page / promotion
@@ -33,15 +35,17 @@ function App() {
     "--primary": "#b8e2f4",
     "--darkPrimary": "#6175a7",
     "--shadow": "#6175a7",
+    "--footer": "#b8e2f4",
   };
 
   const findTheme = () => {
     console.log(pathname);
     if (pathname.includes("menu")) return themeBlue;
-    else if (pathname === "/blog")
+    else if (pathname === "/blog" || pathname === "/blog/1")
       return {
         ...themeBlue,
-        backgroundImage: "linear-gradient(var(--darkPrimary), white)",
+        backgroundImage: "linear-gradient(var(--darkPrimary), #cdd3e3 65%)",
+        "--footer": "#cdd3e3",
       };
   };
   const [cart, setCart] = useState(new Map());
@@ -67,7 +71,12 @@ function App() {
             </Route>
             <Route path="/about" element={<About></About>}></Route>
             <Route path="/checkout" element={<Checkout></Checkout>}></Route>
-            <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/blog">
+              <Route index element={<Blog></Blog>}></Route>
+              <Route path="1" element={<Blog1></Blog1>}></Route>
+              <Route path="2" element={<Blog2></Blog2>}></Route>
+              <Route path="3" element={<Blog3></Blog3>}></Route>
+            </Route>
             <Route path="/events" element={<Events></Events>}></Route>
           </Routes>
           <Footer></Footer>

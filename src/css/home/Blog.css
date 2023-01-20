@@ -12,7 +12,6 @@
 .blog-wrapper #blog1 {
   width: 100%;
   height: 20rem;
-  background-color: rgb(247, 140, 140);
   border-radius: 2rem;
   box-shadow: 0.15rem 0.12rem 0.5rem 0.3rem var(--darkPrimary);
   overflow: hidden;
@@ -118,6 +117,11 @@
   left: 25%;
   bottom: 7%;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.blog-wrapper .grid-more:hover {
+  text-decoration: underline;
 }
 
 .blog-wrapper .grid-img {
@@ -148,3 +152,95 @@
   z-index: 1;
   margin-left: 5%;
 }
+
+/* ///////////////////////////////////////////////////////////////////// */
+.blog-content-wrapper {
+  position: relative;
+  margin-top: 5.5rem;
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 7% 10%;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 2fr 5fr;
+  column-gap: 5%;
+  grid-template-areas:
+    "img p1"
+    "p2 p2";
+  z-index: 1;
+}
+
+.blog-content-wrapper p {
+  text-indent: 2rem;
+}
+
+.blog-content-wrapper #p2 > * {
+  margin-top: 1.5rem;
+  text-indent: 2rem;
+}
+
+.blog-content-wrapper #p2 {
+  grid-area: p2;
+}
+
+.blog-content-wrapper #santa {
+  background-image: url(/public/img/santaDecor1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  width: 35%;
+  aspect-ratio: 1/1;
+  left: 10%;
+  top: -2rem;
+}
+
+#tie {
+  background-image: url(/public/img/decor3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  width: 13%;
+  aspect-ratio: 1/1;
+  left: 45%;
+  top: -7%;
+}
+
+#tree {
+  background-image: url(/public/img/christmas.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  width: 22%;
+  aspect-ratio: 1/1;
+  right: -5.5%;
+  bottom: 15%;
+  transform: rotate(10deg);
+}
+
+#cake {
+  background-image: url(/public/img/cake.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  width: 19%;
+  aspect-ratio: 1/1;
+  bottom: -8%;
+  left: 2%;
+}
+
+@media only screen and (min-width: 1242px) {
+  .blog-content-wrapper #santa {
+    top: -4.5rem;
+  }
+
+  .blog-content-wrapper #cake {
+    background-size: 85%;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////// */

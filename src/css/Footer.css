@@ -35,7 +35,7 @@
 .footer-wrapper .star {
   height: 100%;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--footer);
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -74,7 +74,14 @@
 }
 
 .footer-wrapper .blog-container div > * {
+  text-decoration: none;
   margin-top: 0.5rem;
+  display: block;
+  color: inherit;
+}
+
+.footer-wrapper .blog-container div a:hover {
+  text-decoration: underline;
 }
 
 .footer-wrapper .icons-container {
@@ -129,7 +136,7 @@
 
 .footer-wrapper .curve.left div {
   height: 40%;
-  background-color: var(--primary);
+  background-color: var(--footer);
   border-radius: 0 0 3rem 0;
 }
 
@@ -141,6 +148,6 @@
 
 .footer-wrapper .curve.right div {
   height: 40%;
-  background-color: var(--primary);
+  background-color: var(--footer);
   border-radius: 0 0 0 3rem;
 }
