@@ -9,7 +9,7 @@ const Blog = ({ display }) => {
     <div className="blog-wrapper">
       {display && <h1>BLOG</h1>}
       <Link to="/blog/2" id="blog1">
-        <img src="/img/Blog Banner.png" alt="blog banner"></img>
+        <img src="img/Blog Banner.png" alt="blog banner"></img>
         <BlogTitle className="title"></BlogTitle>
       </Link>
       <div id="blog2">
@@ -38,7 +38,7 @@ const Blog = ({ display }) => {
             {">"} Click to read more
           </Link>
           <div className="grid-img">
-            <img src="/img/daisy.png" alt="person"></img>
+            <img src="img/daisy.png" alt="person"></img>
           </div>
         </div>
       </div>

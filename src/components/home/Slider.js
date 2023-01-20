@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const Slider = () => {
   const slides = [
-    { url: "/img/promotin banner (1).png" },
-    { url: "/img/promotin banner (3).png" },
-    { url: "/img/promotin banner 2.png" },
+    { url: "img/promotin banner (1).png" },
+    { url: "img/promotin banner (3).png" },
+    { url: "img/promotin banner 2.png" },
   ];
   const [curIndex, setCurIndex] = new useState(0);
   const [imgStyle, setImgStyle] = new useState({});
@@ -82,7 +82,7 @@ const Slider = () => {
         </Button>
       </div>
       <div className="slogan--banner">
-        <img src="/img/slogan banner.png" alt="slogan banner"></img>
+        <img src="img/slogan banner.png" alt="slogan banner"></img>
       </div>
     </div>
   );

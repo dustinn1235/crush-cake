@@ -68,19 +68,15 @@ const Menu = () => {
           </p>
         </div>
         <img
-          src="/img/Heart-Anni Cake.png"
+          src="img/Heart-Anni Cake.png"
           id="customcake1"
           alt="cakepop1"
         ></img>
-        <img
-          src="/img/Chocolate Cake.png"
-          id="customcake2"
-          alt="cakepop1"
-        ></img>
+        <img src="img/Chocolate Cake.png" id="customcake2" alt="cakepop1"></img>
       </Link>
       <div className="banner-container">
         <div className="cookie banner">
-          <img src="/img/cookie 3.png" alt="cakepop1"></img>
+          <img src="img/cookie 3.png" alt="cakepop1"></img>
           <h1>Cookie</h1>
           <p>
             A famous and poular cake in European and Merican markets. Cookies
@@ -98,7 +94,7 @@ const Menu = () => {
           </Button>
         </div>
         <div className="brownie banner">
-          <img src="/img/brownie.png" alt="cakepop1"></img>
+          <img src="img/brownie.png" alt="cakepop1"></img>
           <h1>Brownie</h1>
           <p>
             Brownie originated in England with the main ingredient being Dark

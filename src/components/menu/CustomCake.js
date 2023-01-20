@@ -19,12 +19,12 @@ const CustomCake = () => {
   };
 
   const urls = [
-    "/img/step1.png",
-    "/img/step2.png",
-    "/img/step3.png",
-    "/img/step4.png",
-    "/img/step5.png",
-    "/img/step6.png",
+    "img/step1.png",
+    "img/step2.png",
+    "img/step3.png",
+    "img/step4.png",
+    "img/step5.png",
+    "img/step6.png",
   ];
 
   const steps = [
@@ -37,7 +37,7 @@ const CustomCake = () => {
   ];
   const [curStep, setCurStep] = useState(1);
 
-  const options = [["/img/step1.png", "/img/step1.png"]];
+  const options = [["img/step1.png", "img/step1.png"]];
   // Can be implement into whole cake state, 1 step1 option for now
   const [shape, setShape] = useState(0);
 
@@ -52,7 +52,7 @@ const CustomCake = () => {
         <div className="img-container">
           <img
             alt="cake"
-            src="/img/Chocolate Cake.png"
+            src="img/Chocolate Cake.png"
             style={{
               width: "50%",
               transform: "scale(1.4)",
