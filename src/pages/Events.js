@@ -105,13 +105,14 @@ const Events = () => {
           </div>
           <div style={{ backgroundColor: "#b8e2f4", position: "relative" }}>
             <TiStarFullOutline id="star" />
-            <h1>FREE SHIP</h1>
+            <h1 style={{ zIndex: "1" }}>FREE SHIP</h1>
             <p
               style={{
                 fontWeight: "800",
                 fontSize: "2rem",
                 fontStyle: "italic",
                 color: "white",
+                zIndex: "1",
               }}
             >
               HAPPY MONDAY!

@@ -178,6 +178,7 @@
   font-size: 15rem;
   top: 0;
   right: -50%;
+  z-index: 0;
 }
 
 #specialTitle {
