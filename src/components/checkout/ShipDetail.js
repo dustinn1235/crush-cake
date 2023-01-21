@@ -79,7 +79,7 @@ const ShipDetail = ({
               value="4.99"
               control={<Radio style={{ width: "10%" }} />}
               label={
-                <p
+                <span
                   style={{
                     fontFamily: `"Montserrat", sans-serif`,
                     display: "flex",
@@ -88,7 +88,7 @@ const ShipDetail = ({
                 >
                   Fast&nbsp;<p>(Standard delivery)</p>
                   <p style={{ marginLeft: "auto", fontWeight: "500" }}>$4.99</p>
-                </p>
+                </span>
               }
               className="radio"
             />
@@ -96,7 +96,7 @@ const ShipDetail = ({
               value="9.99"
               control={<Radio style={{ width: "10%" }} />}
               label={
-                <p
+                <span
                   style={{
                     fontFamily: `"Montserrat", sans-serif`,
                     display: "flex",
@@ -105,7 +105,7 @@ const ShipDetail = ({
                 >
                   Express <p>(1-2 hours after shipping)</p>
                   <p style={{ marginLeft: "auto", fontWeight: "500" }}>$9.99</p>
-                </p>
+                </span>
               }
               className="radio"
             />
