@@ -11,7 +11,7 @@
   display: flex;
   background-color: #6276a8;
   width: 90%;
-  height: 20rem;
+  /* height: 20rem; */
   padding: 4%;
   border-radius: 1.5rem;
   margin-top: 1rem;
@@ -44,4 +44,19 @@
   width: 100%;
   height: 100%;
   transform: scale(1.9);
+}
+
+@media only screen and (max-width: 480px) {
+  .about-wrapper .about-container {
+    width: 120%;
+    margin-left: 20%;
+    padding-right: 20%;
+  }
+
+  .about-wrapper #logo {
+    width: 100%;
+    aspect-ratio: 1/1;
+    transform: scale(2.3);
+    margin-left: 6%;
+  }
 }

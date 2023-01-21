@@ -14,10 +14,12 @@ const Blog = ({ display }) => {
       </Link>
       <div id="blog2">
         <div className="text-wrapper">
-          <div className="text">
-            <span>WHAT DOES</span>
-            <span className="author-name">DAISY DAISY</span>
-            <span>SAY ABOUT</span>
+          <div className="textt-wrapper">
+            <div className="text">
+              <span>WHAT DOES</span>
+              <span className="author-name">DAISY DAISY</span>
+              <span>SAY ABOUT</span>
+            </div>
             <span className="brand-name">Crush</span>
           </div>
           <GoTriangleRight className="icon"></GoTriangleRight>

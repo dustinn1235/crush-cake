@@ -154,3 +154,22 @@
 .bulletin-wrapper .bulletin .name-wrapper h3 {
   color: #6276a8;
 }
+
+@media only screen and (max-width: 480px) {
+  .bulletin-wrapper .header-title {
+    width: 20%;
+  }
+
+  .bulletin-wrapper .bulletin {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+      "cake discount"
+      "tiktok tiktok";
+  }
+
+  .bulletin-wrapper .bulletin .img-wrapper img {
+    object-fit: contain;
+    transform: scale(1.4);
+  }
+}

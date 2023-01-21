@@ -73,7 +73,8 @@
 @media only screen and (max-width: 480px) {
   .products-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 15%;
-    row-gap: 5rem;
+    padding: 0 5%;
+    column-gap: 7%;
+    row-gap: 2rem;
   }
 }

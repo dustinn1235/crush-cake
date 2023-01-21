@@ -83,7 +83,7 @@
     width: 105.4%;
     margin-left: -2.7%;
     padding: 0 5%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
   }
@@ -99,7 +99,7 @@
 
   .header section .icon {
     display: flex;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: var(--darkPrimary);
   }
 
@@ -115,7 +115,7 @@
   }
 
   nav {
-    width: 45%;
+    width: 70%;
     height: 100vh;
     position: absolute;
     opacity: 1;

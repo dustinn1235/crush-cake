@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div className="about-wrapper">
-      <h2>ABOUT US</h2>
+      <h1>ABOUT US</h1>
       <div className="about-container">
         <CrushLogo id="logo"></CrushLogo>
         <div className="content-container">
