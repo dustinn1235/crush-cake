@@ -29,7 +29,7 @@ const Product = ({ product }) => {
       <div className="price-container">
         <p>${product.price}</p>
         <Button
-          style={{ marginLeft: "auto" }}
+          style={{ marginLeft: "auto", justifyContent: "end" }}
           className="icon"
           onClick={addProduct}
         >

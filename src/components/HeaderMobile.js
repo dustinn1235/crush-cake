@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const HeaderMobile = ({ pathname }) => {
+const HeaderMobile = () => {
   const linkStyle = {
     textDecoration: "none",
     color: "inherit",
@@ -14,13 +14,7 @@ const HeaderMobile = ({ pathname }) => {
     textAlign: "start",
     paddingLeft: "2rem",
   };
-  const activeStyle = {
-    backgroundColor: "var(--shadow)",
-    color: "#ffffff",
-    textShadow: "1px 1px 10px #fff, 1px 1px 10px #ccc",
-    fontSize: "140%",
-    cursor: "pointer",
-  };
+
   const [displayNav, setDisplayNav] = useState(false);
 
   const btnStyle = {

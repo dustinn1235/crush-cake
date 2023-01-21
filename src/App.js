@@ -63,7 +63,7 @@ function App() {
       <UserContext.Provider value={{ cart, setCart, products }}>
         <div className="App">
           <Header pathname={pathname}></Header>
-          <HeaderMobile pathname={pathname}></HeaderMobile>
+          <HeaderMobile pathname></HeaderMobile>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
             <Route path="/menu">
