@@ -173,3 +173,35 @@
 .menu-wrapper #decor-grid-element {
   grid-area: decor;
 }
+
+@media only screen and (max-width: 480px) {
+  .menu-wrapper .big-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .menu-wrapper .big-banner br {
+    display: none;
+  }
+
+  .menu-wrapper .banner-container {
+    width: 90%;
+  }
+
+  .menu-wrapper .big-banner h3 {
+    padding: 0;
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .menu-wrapper .banner h1 {
+    margin-bottom: 1rem;
+  }
+
+  .menu-wrapper #logosvg {
+    left: 0;
+    top: -22%;
+  }
+}

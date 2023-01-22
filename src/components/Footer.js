@@ -39,7 +39,7 @@ const Footer = () => {
           {blogPosts.map((e, i) => {
             return (
               <div key={e.name}>
-                <Link to={`blog/${i === blogPosts.length - 1 ? "#" : i + 1}`}>
+                <Link to={i === blogPosts.length - 1 ? "#" : `blog/${i + 1}`}>
                   {e.name}
                 </Link>
                 {i !== blogPosts.length - 1 && (
