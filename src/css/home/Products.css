@@ -77,4 +77,23 @@
     column-gap: 7%;
     row-gap: 2rem;
   }
+
+  .products-container.home {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3%;
+    padding: 0;
+  }
+
+  .products-container.home .product:last-child {
+    display: none;
+  }
+
+  .products-container.home .price-container .icon {
+    display: none;
+  }
+
+  .products-container.home .price-container p {
+    width: 100%;
+    text-align: center;
+  }
 }

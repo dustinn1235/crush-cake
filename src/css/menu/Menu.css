@@ -202,6 +202,7 @@
 
   .menu-wrapper #logosvg {
     left: 0;
-    top: -22%;
+    top: -25%;
+    transform: scale(0.4);
   }
 }

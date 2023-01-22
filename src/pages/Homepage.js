@@ -16,7 +16,11 @@ const Homepage = () => {
       <IconBar></IconBar>
       <Slider></Slider>
       <Bulletin></Bulletin>
-      <Products title="DESSERT" products={displayProducts}></Products>
+      <Products
+        title="DESSERT"
+        products={displayProducts}
+        home="true"
+      ></Products>
       <AboutUs></AboutUs>
       <Blog display="true"></Blog>
     </div>
