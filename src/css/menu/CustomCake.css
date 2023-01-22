@@ -70,6 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  justify-self: center;
 }
 
 .cakecreate-container .option {
@@ -120,7 +122,10 @@
   }
 
   .cakecreate-container .button-container {
-    display: none;
+    position: absolute;
+    width: 10%;
+    bottom: 10%;
+    right: 8%;
   }
 
   .steps-container-mobile {

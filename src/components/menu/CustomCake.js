@@ -95,7 +95,10 @@ const CustomCake = () => {
           ))}
         </div>
         <div className="button-container">
-          <Button onClick={() => addProduct(customCake)}>
+          <Button
+            onClick={() => addProduct(customCake)}
+            style={{ width: "100%" }}
+          >
             Done! &gt;&gt;&gt;
           </Button>
         </div>
