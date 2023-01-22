@@ -37,12 +37,19 @@ const CustomCake = () => {
   ];
   const [curStep, setCurStep] = useState(1);
 
-  const options = [["/img/step1.png", "/img/step1.png"]];
+  const options = [
+    ["/img/step1.png", "/img/step1.png"],
+    ["/img/step1.png", "/img/step1.png"],
+    ["/img/step1.png", "/img/step1.png"],
+    ["/img/step1.png", "/img/step1.png"],
+    ["/img/step1.png", "/img/step1.png"],
+    ["/img/step1.png", "/img/step1.png"],
+  ];
   // Can be implement into whole cake state, 1 step1 option for now
   const [shape, setShape] = useState(0);
 
   return (
-    <div>
+    <div className="customcake-wrapper">
       <Title title="Custom Cake"></Title>
       <div className="cakecreate-container">
         <div id="current-step">
@@ -92,6 +99,19 @@ const CustomCake = () => {
             Done! &gt;&gt;&gt;
           </Button>
         </div>
+      </div>
+      <div className="steps-container-mobile">
+        {urls.map((e, i) => (
+          <button
+            key={i}
+            className="step"
+            style={{
+              backgroundImage: `url(${e})`,
+              backgroundColor: `${curStep - 1 === i ? "#f4a1ae" : "#fcf5f8"}`,
+            }}
+            onClick={() => setCurStep(i + 1)}
+          />
+        ))}
       </div>
     </div>
   );
