@@ -30,3 +30,20 @@
   left: -28%;
   top: -65%;
 }
+
+@media only screen and (max-width: 480px) {
+  .aboutus-content {
+    font-size: 1.5rem;
+    padding: 10%;
+    width: 90%;
+    margin-top: 15rem;
+  }
+
+  .aboutus-wrapper #logo {
+    position: relative;
+    transform: scale(1.2);
+    left: 0;
+    margin-top: -50%;
+    margin-bottom: 3rem;
+  }
+}

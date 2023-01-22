@@ -52,6 +52,7 @@ const HeaderMobile = () => {
       <div
         className="nav-overlay"
         style={!displayNav ? { display: "none" } : {}}
+        onClick={toggle}
       ></div>
       <nav
         style={
