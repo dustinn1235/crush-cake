@@ -251,7 +251,7 @@
   width: 35%;
   aspect-ratio: 1/1;
   left: 10%;
-  top: -2rem;
+  top: -4.5rem;
 }
 
 #tie {
@@ -284,20 +284,29 @@
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  background-size: 100%;
   width: 19%;
   aspect-ratio: 1/1;
   bottom: -8%;
   left: 2%;
+  background-size: 70%;
 }
 
-@media only screen and (min-width: 1242px) {
+@media only screen and (max-width: 480px) {
+  .blog-content-wrapper {
+    padding-bottom: 0;
+  }
+
   .blog-content-wrapper #santa {
-    top: -4.5rem;
+    top: 6rem;
+  }
+
+  .blog-content-wrapper #tie {
+    top: -2%;
   }
 
   .blog-content-wrapper #cake {
-    background-size: 85%;
+    bottom: -5%;
+    width: 30%;
   }
 }
 
@@ -343,6 +352,24 @@
 #blog2-wrapper p {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #blog2-wrapper {
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cake-img2";
+  }
+
+  #blog2-wrapper #cake-img2 {
+    width: 110%;
+    grid-area: cake-img2;
+    margin-bottom: 2rem;
+  }
+
+  #blog2-wrapper #cake-img1 {
+    display: none;
+  }
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
