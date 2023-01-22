@@ -10,7 +10,7 @@ const EmptyCart = () => {
   return (
     <div className="emptycart-container">
       <h1>Your bag is empty. We know how to fix that!</h1>
-      <Products products={displayProducts}></Products>
+      <Products products={displayProducts} home="true"></Products>
     </div>
   );
 };
