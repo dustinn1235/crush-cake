@@ -25,8 +25,6 @@ function App() {
   cart:
   info validation and error check
 
-  mobile: responsive layout design
-
   add loading page for image
    */
 
