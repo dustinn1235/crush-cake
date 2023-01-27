@@ -111,6 +111,7 @@ const CustomCake = () => {
             style={{
               backgroundImage: `url(${e})`,
               backgroundColor: `${curStep - 1 === i ? "#f4a1ae" : "#fcf5f8"}`,
+              aspectRatio: `${curStep - 1 === i ? "1/1.5" : ""}`,
             }}
             onClick={() => setCurStep(i + 1)}
           />

@@ -137,6 +137,7 @@
     grid-template-columns: repeat(6, 1fr);
     column-gap: 1rem;
     padding: 0 2%;
+    height: 13rem;
   }
 
   .steps-container-mobile .step {
@@ -147,12 +148,17 @@
     border-radius: 0 0 2rem 2rem;
     margin-top: -1rem;
     border: none;
+    transition: 0.2s;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .customcake-wrapper {
     padding: 0;
+  }
+
+  .steps-container-mobile {
+    height: 9.5rem;
   }
 
   .steps-container-mobile .step {
