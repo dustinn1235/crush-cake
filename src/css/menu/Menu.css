@@ -160,6 +160,7 @@
   background-position: center;
   background-size: cover;
   cursor: default;
+  height: 100%;
 }
 
 .menu-wrapper #dough-grid-element {

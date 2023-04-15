@@ -33,7 +33,7 @@ const Product = ({ product }) => {
           className="icon"
           onClick={addProduct}
         >
-          <FiShoppingBag></FiShoppingBag>
+          <FiShoppingBag style={{ marginLeft: "auto" }}></FiShoppingBag>
         </Button>
       </div>
     </div>
