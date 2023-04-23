@@ -273,6 +273,10 @@
     row-gap: 2.5rem;
   }
 
+  .cart-item .button-container {
+    height: fit-content;
+  }
+
   .billing-container .icon {
     left: -2%;
   }
