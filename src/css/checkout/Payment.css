@@ -46,6 +46,7 @@
   padding-left: 1rem;
   background-color: #ebebeb;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .middle .payment-el textarea:focus,
@@ -64,4 +65,9 @@
 .method-header {
   padding-top: 1%;
   padding-bottom: 1%;
+  padding-left: 1rem;
+}
+
+.method-header input {
+  max-width: 1.5rem;
 }
